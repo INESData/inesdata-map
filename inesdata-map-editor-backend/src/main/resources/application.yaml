@@ -1,0 +1,91 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ^project.groupId^:^project.artifactId^
+  jpa:
+    hibernate:
+      ddl-auto: none
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  # Base de datos (valores por defecto para el entorno de desarrollo local)
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inesdata_map_db
+    username: inesdata_map
+    password: inesdata_map
+    hikari:
+      minimum-idle: 1
+      maximum-pool-size: 10
+      auto-commit: false
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+  # Liquibase (valores por defecto para el entorno de desarrollo local)
+  liquibase:
+    enabled: false
+    drop-first: false
+    changeLog: db/db.changelog-master.xml
+    default-schema: public
+
+app:
+  data-processing-path: C:\inesdata-map\data
+
+# Security
+security:
+  cors:
+    - path: /**
+      allowed-origins: "*"
+      allowed-methods: "*"
+      allowed-headers: "*"
+      exposed-headers: "*"
+
+# REST API info
+info:
+  rest-api:
+    name: ${spring.application.name}
+    description: ^project.description^
+    version: ^project.version^
+
+# SpringDoc
+springdoc:
+  default-produces-media-type: application/json
+  show-actuator: true
+  writer-with-order-by-keys: true
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    tagsSorter: alpha
+    operationsSorter: alpha
+
+# Actuators
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,loggers,metrics,prometheus
+  endpoint:
+    health:
+      # Never by default. Set to always if needed for development.
+      show-details: never
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include:
+            - readinessState
+            - db
+  loggers:
+    enabled: true
+  info:
+    env.enabled: true
+    build.enabled: true
+    git.mode: full
+    java.enabled: true
+    os.enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}

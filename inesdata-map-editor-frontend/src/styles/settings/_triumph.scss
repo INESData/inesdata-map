@@ -1,0 +1,217 @@
+// CURSORS
+
+.cursor-pointer {
+	cursor: pointer;
+}
+.cursor-none {
+	cursor: none;
+}
+
+//TEXT DECORATION
+.text {
+	&-underline {
+		text-decoration: underline;
+	}
+	&-capitalize {
+		text-transform: capitalize;
+	}
+	&-uppercase {
+		text-transform: uppercase;
+	}
+	&-bold {
+		font-weight: 600;
+	}
+	&-strong {
+		font-weight: 500;
+	}
+	&-italic {
+		font-style: italic;
+	}
+}
+
+// POSITIONS AND DDISPLAYS
+
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+// AlIGNS
+
+.align {
+	&-right {
+		text-align: right;
+	}
+	&-left {
+		text-align: left;
+	}
+	&-center {
+		text-align: center;
+	}
+}
+
+// FLEXBOX
+
+.flex {
+	display: flex;
+	&-center {
+		align-items: center;
+	}
+	&-stretch {
+		align-items: stretch;
+	}
+	&-end {
+		align-items: flex-end;
+	}
+	&-baseline {
+		align-items: baseline;
+	}
+	&-start {
+		align-items: flex-start;
+	}
+	&-flow {
+		flex-flow: row wrap;
+	}
+	&-root {
+		display: flow-root;
+	}
+	&-wrap {
+		flex-wrap: wrap;
+	}
+	&-nowrap {
+		flex-wrap: nowrap;
+	}
+	&-column {
+		flex-direction: column;
+	}
+	&-column-reverse {
+		flex-direction: column-reverse;
+	}
+	&-row {
+		flex-direction: row;
+	}
+	&-row-reverse {
+		flex-direction: row-reverse;
+	}
+	&-justify {
+		&-right {
+			justify-content: flex-end;
+		}
+		&-start {
+			justify-content: flex-start;
+		}
+		&-space-evenly {
+			justify-content: space-evenly;
+		}
+		&-between {
+			justify-content: space-between;
+		}
+		&-around {
+			justify-content: space-around;
+		}
+		&-center {
+			justify-content: center;
+		}
+	}
+}
+
+// DISABLE
+
+.disabled {
+	pointer-events: none;
+	opacity: 0.4;
+}
+
+// WIDHTS
+
+.w-full {
+	width: 100%;
+}
+
+.w-100 {
+	width: 100px;
+}
+
+.w-200 {
+	width: 200px;
+}
+
+.w-300 {
+	width: 300px;
+}
+
+.w-400 {
+	width: 400px;
+}
+
+.w-500 {
+	width: 500px;
+}
+
+.w-600 {
+	width: 600px;
+}
+
+.w-700 {
+	width: 700px;
+}
+
+.w-800 {
+	width: 800px;
+}
+
+.w-900 {
+	width: 900px;
+}
+
+// HEIGHT
+
+.h-full {
+	height: 100%;
+}
+
+.h-100 {
+	height: 100px;
+}
+
+.h-200 {
+	height: 200px;
+}
+
+.h-300 {
+	height: 300px;
+}
+
+.h-400 {
+	height: 400px;
+}
+
+.h-500 {
+	height: 500px;
+}
+
+.h-600 {
+	height: 600px;
+}
+
+.h-700 {
+	height: 700px;
+}
+
+.h-800 {
+	height: 800px;
+}
+
+.h-900 {
+	height: 900px;
+}

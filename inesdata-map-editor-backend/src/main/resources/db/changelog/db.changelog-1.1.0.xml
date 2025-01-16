@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<include file="classpath:db/changelog/1.1.0/updateObjectMap.xml"/>
+	<include file="classpath:db/changelog/1.1.0/addColumnFilePath.xml"/>
+	<include file="classpath:db/changelog/1.1.0/createExecution.xml"/>
+	<include file="classpath:db/changelog/1.1.0/addColumnBaseUrl.xml"/>
+	<include file="classpath:db/changelog/1.1.0/dropTableNamespace.xml"/>
+	<include file="classpath:db/changelog/1.1.0/dropColumnOntology.xml"/>
+	<include file="classpath:db/changelog/1.1.0/addTableMappingOntology.xml"/>
+	<include file="classpath:db/changelog/1.1.0/updateDataSourceFields.xml"/>
+	<include file="classpath:db/changelog/1.1.0/createNamespace.xml"/>
+
+</databaseChangeLog>

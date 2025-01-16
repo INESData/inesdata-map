@@ -1,0 +1,26 @@
+server:
+  port: 0
+
+spring:
+  main:
+    banner-mode: "off"
+  jpa:
+    database: H2
+    hibernate:
+      # Allowed values:
+      # - none: Make no changes
+      # - validate: Validates the schema without make changes to DB
+      # - update: Updates the schema
+      # - create: Creates the schema, destroying previous data.
+      # - create-drop: Drops the schema when the SessionFactory is closed explicitly, typically when the application is stopped.
+      ddl-auto: create-drop
+  # Base de datos de aplicacion (valores por defecto para el entorno de desarrollo local)
+  datasource:
+    url: jdbc:h2:mem:test_db
+  # Liquibase (desactivado para los tests)
+  liquibase:
+    enabled: false
+
+app:
+  data-processing-path: /test/input
+

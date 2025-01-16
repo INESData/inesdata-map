@@ -1,0 +1,171 @@
+<div class="whiteContainer w-full">
+	<h1 class="mb-3">{{ "mappings.mapping.list" | translate }}</h1>
+	<p-button class="btn btn__secondary mr-2" [label]="'mappings.mapping.manual' | translate" routerLink="/mappings/builder" />
+	<p-button class="btn btn__secondary mr-2" [label]="'mappings.mapping.automatic' | translate" (onClick)="showDialogAuto()" />
+	<p-button class="btn btn__secondary" [label]="'mappings.mapping.import' | translate" (onClick)="showDialogImport()" />
+	<p-table class="mt-2 block" [value]="mappings">
+		<ng-template pTemplate="header">
+			<tr>
+				<th scope="col">{{ "labels.name" | translate }}</th>
+				<th scope="col">{{ "labels.ontology" | translate }}</th>
+				<th scope="col">{{ "labels.data-source" | translate }}</th>
+				<th scope="col"></th>
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="body" let-mapping>
+			<tr>
+				<td>{{ mapping.name }}</td>
+				<td [title]="mapping.ontologies | join">{{ mapping.ontologies | join }}</td>
+				<td [title]="mapping.dataSources | join">{{ mapping.dataSources | join }}</td>
+				<td>
+					<div class="flex flex-justify flex-justify-right">
+						<p-button class="btn btn__icon icon-ojo mr-1" />
+						<p-button (onClick)="showDialog(mapping)" class="btn btn__icon icon-play mr-1" />
+						<p-button (onClick)="editMapping(mapping.id)" class="btn btn__icon icon-lapiz mr-1" />
+						<p-button (onClick)="showDialogDelete(mapping)" class="btn btn__icon icon-papelera" />
+					</div>
+				</td>
+			</tr>
+		</ng-template>
+	</p-table>
+	<!-- Paginator -->
+	<app-paginator [paginationInfo]="paginationInfo" (pageChange)="onPageChange($event)"> ></app-paginator>
+</div>
+
+<!-- Automatic mapping dialog -->
+<p-dialog
+	[header]="'mappings.mapping.automatic' | translate"
+	[modal]="true"
+	[draggable]="false"
+	[(visible)]="autoDialogVisible"
+	[style]="{ width: '40rem' }"
+>
+	<p class="mt-0" [innerHTML]="'mappings.mapping.automatic_selection' | translate"></p>
+	<div class="grid">
+		<div class="col-6">
+			<h3 class="mt-1 mb-1">{{ "ontologies.ontologies" | translate }}</h3>
+			<div class="mappingCategory">
+				<div class="flex flex-column gap-3">
+					<div class="searcherContainer">
+						<input class="searcher" [placeholder]="'placeholders.search' | translate" type="text" pInputText />
+					</div>
+					<div *ngFor="let category of categories" class="field-checkbox">
+						<p-checkbox [(ngModel)]="selectedCategories" [label]="category.name" name="group" [value]="category" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<h3 class="mt-1 mb-1">{{ "data-sources.data-source.sources" | translate }}</h3>
+			<div class="mappingCategory">
+				<div class="flex flex-column gap-3">
+					<div class="searcherContainer">
+						<input class="searcher" [placeholder]="'placeholders.search' | translate" type="text" pInputText />
+					</div>
+					<div *ngFor="let category of categories" class="field-checkbox">
+						<p-checkbox [(ngModel)]="selectedCategories" [label]="category.name" name="group" [value]="category" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-justify-right col-12">
+			<p-button class="btn btn__primary mr-2" [label]="'mappings.mapping.build' | translate" type="button" />
+			<p-button class="btn btn__secondary" [label]="'labels.cancel' | translate" type="button" />
+		</div>
+	</div>
+</p-dialog>
+
+<!-- Import mapping dialog -->
+<p-dialog
+	[header]="'mappings.mapping.import_mapping' | translate"
+	[modal]="true"
+	[draggable]="false"
+	[(visible)]="importDialogVisible"
+	[style]="{ width: '40rem' }"
+>
+	<p class="mt-0" [innerHTML]="'mappings.mapping.select' | translate"></p>
+	<div class="grid mt-1">
+		<div class="col-12">
+			<div class="flex">
+				<label class="customfileUpload">
+					{{ "labels.importRML" | translate }}
+					<input class="fileUploader" type="file" pInputText (change)="onFileSelected($event)" />
+				</label>
+				<span class="fileName" [class.selected]="fileSelected">{{ fileName }}</span>
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="col-6">
+			<h3 class="mt-1 mb-1">{{ "ontologies.ontologies" | translate }}</h3>
+			<div class="mappingCategory">
+				<div class="flex flex-column gap-3">
+					<div class="searcherContainer">
+						<input class="searcher" [placeholder]="'placeholders.search' | translate" type="text" pInputText />
+					</div>
+					<div *ngFor="let ontology of ontologies" class="field-checkbox">
+						<p-checkbox [(ngModel)]="selectedOntologies" [label]="ontology.name" name="group" [value]="ontology" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<h3 class="mt-1 mb-1">{{ "data-sources.data-source.sources" | translate }}</h3>
+			<div class="mappingCategory">
+				<div class="flex flex-column gap-3">
+					<div class="searcherContainer">
+						<input class="searcher" [placeholder]="'placeholders.search' | translate" type="text" pInputText />
+					</div>
+					<div *ngFor="let dataSource of dataSources" class="field-checkbox">
+						<p-checkbox [(ngModel)]="selectedDataSources" [label]="dataSource.name" name="group" [value]="dataSource" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-justify-right col-12">
+			<p-button class="btn btn__primary mr-2" [label]="'labels.import_mapping' | translate" type="button" />
+			<p-button class="btn btn__secondary" [label]="'labels.cancel' | translate" type="button" (onClick)="cancelImport()" />
+		</div>
+	</div>
+</p-dialog>
+
+<!-- Materialisation history dialog -->
+<p-dialog
+	[header]="('materialisations.historic' | translate) + (selectedMapping ? selectedMapping.name : '')"
+	[modal]="true"
+	[draggable]="false"
+	[(visible)]="addHistoryDialog"
+	[style]="{ width: '60rem' }"
+>
+	<app-mappings-records
+		*ngIf="addHistoryDialog"
+		(formSubmitted)="addHistoryDialog = false"
+		[mappingId]="selectedMapping.id"
+	></app-mappings-records>
+</p-dialog>
+
+<!-- Delete dialog -->
+<p-dialog
+	[header]="'mappings.mapping.confirmation' | translate"
+	[modal]="true"
+	[draggable]="false"
+	[(visible)]="deleteDialogVisible"
+	[style]="{ width: '40rem' }"
+>
+	<div class="flex flex-justify-right w-full">
+		<p-button
+			class="btn btn__primary mr-2"
+			[label]="'labels.delete' | translate"
+			type="button"
+			(click)="deleteMapping(selectedMapping.id)"
+			(keydown.enter)="deleteMapping(selectedMapping.id)"
+		/>
+		<p-button
+			class="btn btn__secondary"
+			[label]="'labels.cancel' | translate"
+			type="button"
+			(click)="cancelDelete()"
+			(keydown.enter)="cancelDelete()"
+		/>
+	</div>
+</p-dialog>

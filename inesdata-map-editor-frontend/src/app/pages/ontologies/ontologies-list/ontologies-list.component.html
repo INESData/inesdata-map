@@ -1,0 +1,66 @@
+<div class="whiteContainer">
+	<h1 class="mb-3">{{ "ontologies.ontology.list" | translate }}</h1>
+	<p-button (onClick)="showDialog()" class="btn btn__secondary" [label]="'ontologies.ontology.add' | translate" />
+	<p-table class="mt-2 block" [value]="ontologies">
+		<ng-template pTemplate="header">
+			<tr>
+				<th scope="col">{{ "labels.name" | translate }}</th>
+				<th scope="col">{{ "labels.title" | translate }}</th>
+				<th scope="col">{{ "labels.url" | translate }}</th>
+				<th scope="col">{{ "labels.version_name" | translate }}</th>
+				<th scope="col">{{ "labels.date" | translate }}</th>
+				<th scope="col"></th>
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="body" let-ontology>
+			<tr>
+				<td>{{ ontology.name }}</td>
+				<td>{{ ontology.title }}</td>
+				<td>{{ ontology.url }}</td>
+				<td>{{ ontology.versionName }}</td>
+				<td>{{ ontology.uploadDate | date: "dd-MM-yyyy" }}</td>
+				<td>
+					<div class="flex flex-justify flex-justify-right">
+						<p-button class="btn btn__icon icon-lapiz mr-1" (click)="showDialog(ontology)" (keydown.enter)="showDialog(ontology)" />
+						<p-button
+							class="btn btn__icon icon-papelera"
+							(click)="showDialogDelete(ontology)"
+							(keydown.enter)="showDialogDelete(ontology)"
+						/>
+					</div>
+				</td>
+			</tr>
+		</ng-template>
+	</p-table>
+	<!-- Paginator -->
+	<app-paginator [paginationInfo]="paginationInfo" (pageChange)="onPageChange($event)"> ></app-paginator>
+</div>
+<p-dialog [header]="header" [modal]="true" [draggable]="false" [(visible)]="visible" [style]="{ width: '40rem' }">
+	<app-ontologies-form [isEditMode]="isEditMode" [ontology]="selectedOntology" (formSubmitted)="onFormSubmitted()"></app-ontologies-form>
+</p-dialog>
+
+<!-- Delete dialog -->
+<p-dialog
+	[header]="'ontologies.ontology.confirmation' | translate"
+	[modal]="true"
+	[draggable]="false"
+	[(visible)]="deleteDialogVisible"
+	[style]="{ width: '40rem' }"
+>
+	<div class="flex flex-justify-right w-full">
+		<p-button
+			class="btn btn__primary mr-2"
+			[label]="'labels.delete' | translate"
+			type="button"
+			(click)="deleteOntology(selectedOntology.id)"
+			(keydown.enter)="deleteOntology(selectedOntology.id)"
+		/>
+		<p-button
+			class="btn btn__secondary"
+			[label]="'labels.cancel' | translate"
+			type="button"
+			(click)="cancelDelete()"
+			(keydown.enter)="cancelDelete()"
+		/>
+	</div>
+</p-dialog>

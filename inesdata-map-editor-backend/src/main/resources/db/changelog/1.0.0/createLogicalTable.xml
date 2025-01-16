@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+	<changeSet author="gmv" id="1.0.0-logical-table">
+		<createTable tableName="LOGICAL_TABLE">
+			<column name="id" type="BIGINT" autoIncrement="true">
+				<constraints nullable="false" unique="true" primaryKey="true" />
+			</column>
+			<column name="table_name" type="VARCHAR(255)"/>
+			<column name="query" type="VARCHAR(255)"/>
+			<column name="version" type="BIGINT" defaultValueNumeric="0"/>
+		</createTable>
+	</changeSet>
+
+</databaseChangeLog>

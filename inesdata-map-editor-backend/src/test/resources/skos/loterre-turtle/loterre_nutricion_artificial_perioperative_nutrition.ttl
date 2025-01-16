@@ -1,0 +1,33 @@
+@prefix bl8: <http://data.loterre.fr/ark:/67375/BL8> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+bl8:-MMT6SFCW-K
+  a skos:Concept ;
+  skos:hiddenLabel "Nutrition artificielle péri opératoire"@fr, "Perioperative nutrition"@en ;
+  skos:prefLabel "nutrition artificielle péri-opératoire"@fr, "perioperative nutrition"@en ;
+  skos:altLabel "nutrition artificielle périopératoire"@fr ;
+  skos:narrower bl8:-P97HL9WM-5, bl8:-C18NC3XS-8, bl8:-NW4C6T9H-F ;
+  skos:inScheme bl8: ;
+  skos:broader bl8:-DQ3NDFS8-5 .
+
+bl8:-NW4C6T9H-F
+  skos:prefLabel "nutrition artificielle postéopératoire"@fr, "postoperative artificial nutrition"@en ;
+  a skos:Concept ;
+  skos:broader bl8:-MMT6SFCW-K .
+
+bl8:-DQ3NDFS8-5
+  skos:prefLabel "artificial nutrition"@en, "nutrition artificielle"@fr ;
+  a skos:Concept ;
+  skos:narrower bl8:-MMT6SFCW-K .
+
+bl8:-P97HL9WM-5
+  skos:prefLabel "nutrition artificielle péri-opératoire en chirurgie programmée"@fr, "perioperative nutrition in programmated surgery"@en ;
+  a skos:Concept ;
+  skos:broader bl8:-MMT6SFCW-K .
+
+bl8:-C18NC3XS-8
+  skos:prefLabel "nutrition artificielle préopératoire"@fr, "preoperative artificial nutrition"@en ;
+  a skos:Concept ;
+  skos:broader bl8:-MMT6SFCW-K .
+
+bl8: a skos:ConceptScheme .

@@ -1,0 +1,3 @@
+target/*.jar.original
+target/*-javadoc.jar
+target/*-sources.jar

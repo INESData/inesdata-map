@@ -1,0 +1,71 @@
+@import "../../../../styles/styles.scss";
+
+:host ::ng-deep .sideBar {
+	.p-panelmenu {
+		position: fixed;
+		top: 100px;
+		left: 0px;
+		height: 100%;
+		width: 200px;
+		background-color: $secondary;
+		.p-panelmenu-panel {
+			.p-panelmenu-header {
+				.p-panelmenu-header-content {
+					height: 70px;
+					width: 100%;
+					border-radius: 0px;
+					border-top: 0px;
+					border-left: 0px;
+					border-right: 0px;
+					border-bottom: 1px solid $grey700;
+					background: none;
+					.p-panelmenu-header-action {
+						height: 100%;
+						font-size: 20px;
+						font-weight: 500;
+						color: $white;
+						background-color: transparent;
+						transition: background-color 0.2s;
+						span {
+							color: $white;
+						}
+						&.p-menuitem-link-active {
+							cursor: default;
+							font-weight: 800;
+							color: $primary;
+							background-color: $white;
+							transition: background-color 0.2s;
+							span {
+								color: $primary;
+							}
+							&:hover {
+								background-color: $white;
+							}
+						}
+						&:hover {
+							background-color: $black;
+						}
+						.p-menuitem-icon {
+							margin-right: 1rem;
+							&.pi-folder::before {
+								content: "\e90b";
+								font-family: "icomoon", sans-serif;
+								font-size: 32px;
+							}
+							&.pi-file::before {
+								content: "\e90a";
+								font-family: "icomoon", sans-serif;
+								font-size: 32px;
+							}
+							&.pi-list::before {
+								content: "\e909";
+								font-family: "icomoon", sans-serif;
+								font-size: 32px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

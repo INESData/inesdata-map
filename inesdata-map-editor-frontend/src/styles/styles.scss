@@ -1,0 +1,303 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeflex/primeflex.css";
+
+@import "settings/colors";
+@import "settings/triumph";
+@import "settings/spacings";
+@import "settings/typography";
+@import "settings/fonts";
+@import "settings/override";
+
+body,
+* {
+	font-family: "Baloo 2", sans-serif;
+	letter-spacing: -0.5px;
+}
+
+body {
+	color: $darkblue;
+	background-color: $grey200;
+	margin: 0;
+	padding: 0;
+	padding-top: 100px;
+	padding-left: 200px;
+}
+
+label,
+span,
+div {
+	color: $darkblue;
+}
+
+h1 {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: $darkblue;
+	&.category {
+		position: relative;
+		width: fit-content;
+		color: $primary;
+		&::after {
+			position: absolute;
+			right: -40px;
+			font-family: "icomoon", sans-serif;
+			font-size: 32px;
+			color: $primary;
+		}
+		&__ontologies {
+			&::after {
+				content: "\e90b";
+				top: 5px;
+			}
+		}
+		&__datasources {
+			&::after {
+				content: "\e90a";
+				top: 0px;
+			}
+		}
+		&__mapping {
+			&::after {
+				content: "\e909";
+				top: 2px;
+			}
+		}
+	}
+}
+
+h3 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 300;
+	color: $darkblue;
+	&.category {
+		text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+	}
+}
+
+.whiteContainer {
+	padding: 18px;
+	background-color: $white;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.recordContainer {
+	overflow-y: auto;
+	max-height: 400px;
+	height: 100%;
+	width: 100%;
+	&__item {
+		width: 100%;
+		.recordTitle {
+			border-bottom: 1px solid $grey500;
+		}
+		.recordFiles {
+			display: flex;
+			flex-direction: column;
+			.recordFile {
+				position: relative;
+				width: fit-content;
+				margin: 2px 50px;
+				color: $primary;
+				&::after {
+					position: absolute;
+					border-radius: 25px;
+					font-size: 12px;
+					color: white;
+					font-weight: 600;
+					padding: 2px 10px;
+					margin-left: 10px;
+				}
+				&__RML {
+					&::after {
+						content: "RML";
+						background-color: $orange;
+					}
+				}
+				&__RDF {
+					&::after {
+						content: "RDF";
+						background-color: $blue;
+					}
+				}
+				&__SPARQL {
+					&::after {
+						content: "SPARQL";
+						background-color: $green;
+					}
+				}
+				&__LOG {
+					&::after {
+						content: "LOG";
+						background-color: $grey600;
+					}
+				}
+			}
+		}
+	}
+}
+
+.menu-button {
+	border: 0px;
+	background: none;
+	.p-button-icon {
+		&::before {
+			content: "\e90c";
+			font-family: "icomoon", sans-serif;
+			font-size: 32px;
+			color: $white;
+		}
+	}
+}
+
+.mappingCategory {
+	position: relative;
+	height: 250px;
+	width: 100%;
+	padding: 60px 18px 60px 18px;
+	border: 1px solid $grey300;
+	.flex-column {
+		overflow: auto;
+		height: 150px;
+	}
+	.searcherContainer {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		.searcher {
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-top: 0px;
+			border-right: 0px;
+			border-left: 0px;
+			border-bottom: 1px solid $grey300;
+			width: 100%;
+			padding-left: 40px;
+			&::placeholder {
+				color: $grey300;
+			}
+		}
+		&::before {
+			content: "\e90d";
+			z-index: 1;
+			position: absolute;
+			top: 10px;
+			left: 12px;
+			color: $grey300;
+			font-family: "icomoon", sans-serif;
+			font-size: 18px;
+		}
+	}
+	.addButton {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		padding: 0px 18px;
+		height: 42px;
+		width: 100%;
+		background-color: $white;
+		.p-button {
+			padding: 8px 32px;
+			border: 0px;
+			border-radius: 0px;
+			background-color: $white;
+			.p-button-label {
+				color: $primary;
+				font-weight: 500;
+				font-size: 16px;
+			}
+			&:hover {
+				.p-button-label {
+					color: $black;
+				}
+			}
+		}
+		&__plus::before {
+			z-index: 1;
+			content: "\e901";
+			position: absolute;
+			left: 22px;
+			font-family: "icomoon", sans-serif;
+			font-size: 18px;
+			color: $primary;
+		}
+		&__query::before {
+			z-index: 1;
+			content: "\e900";
+			position: absolute;
+			left: 22px;
+			font-family: "icomoon", sans-serif;
+			font-size: 18px;
+			color: $primary;
+		}
+		&:hover {
+			&.addButton__query::before {
+				color: $black !important;
+				transition: color 0.2s;
+			}
+			&.addButton__plus::before {
+				color: $black !important;
+				transition: color 0.2s;
+			}
+		}
+	}
+	&__query {
+		overflow: auto;
+		font-size: 14px;
+		padding: 8px;
+		color: $grey600;
+	}
+}
+
+.queryItem {
+	position: relative;
+	&::before {
+		content: "\e900";
+		position: absolute;
+		top: -1px;
+		right: -24px;
+		font-family: "icomoon", sans-serif;
+		font-size: 16px;
+		color: $black;
+	}
+}
+
+// SELECT BUTTON
+.p-selectbutton .p-button {
+  background-color: $primary;
+  border: none;
+}
+
+.p-selectbutton .p-button:hover {
+  background-color: $black;
+}
+
+.p-selectbutton .p-button:not(.p-highlight) {
+  background-color: $orange;
+}
+
+.p-selectbutton .p-button-label {
+  color: $white;
+	font-weight: 500;
+  font-size: 14px;
+}
+
+// AUTO COMPLETE INPUT
+
+.p-element {
+	.p-autocomplete {
+		max-width: 419px;
+    width: 100%;
+	}
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item.p-highlight {
+	background: $primary;
+}

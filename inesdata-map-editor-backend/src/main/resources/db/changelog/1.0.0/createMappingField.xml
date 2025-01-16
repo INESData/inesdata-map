@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<changeSet author="gmv" id="1.0.0-mapping-field">
+		<createTable tableName="MAPPING_FIELD">
+			<column name="id" type="BIGINT" autoIncrement="true">
+				<constraints nullable="false" unique="true" primaryKey="true"/>
+			</column>
+			<column name="logical_table_id" type="BIGINT">
+				<constraints nullable="true"/>
+			</column>
+			<column name="logical_source_id" type="BIGINT">
+				<constraints nullable="true"/>
+			</column>
+			<column name="subject_id" type="BIGINT">
+				<constraints nullable="true"/>
+			</column>
+			<column name="source_id" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+			<column name="ontology_id" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+			<column name="mapping_id" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+			<column name="version" type="BIGINT" defaultValueNumeric="0"/>
+
+		</createTable>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_FIELD"
+        						 baseColumnNames="logical_table_id"
+                                 constraintName="FK_mapping_field_logical_table"
+                                 referencedTableName="LOGICAL_TABLE"
+                                 referencedColumnNames="id"/>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_FIELD"
+        						 baseColumnNames="logical_source_id"
+                                 constraintName="FK_mapping_field_logical_source"
+                                 referencedColumnNames="id"
+                                 referencedTableName="LOGICAL_SOURCE"/>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_FIELD"
+        						 baseColumnNames="subject_id"
+                                 constraintName="FK_mapping_field_subject"
+                                 referencedColumnNames="id"
+                                 referencedTableName="SUBJECT_MAP"/>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_FIELD"
+        						 baseColumnNames="source_id"
+                                 constraintName="FK_mapping_field_source"
+                                 referencedColumnNames="id"
+                                 referencedTableName="DATA_SOURCE"/>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_FIELD"
+        						 baseColumnNames="ontology_id"
+                                 constraintName="FK_mapping_field_ontology"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ONTOLOGY"/>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_FIELD"
+                                 baseColumnNames="mapping_id"
+                                 constraintName="FK_mapping_field_mapping_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="MAPPING"/>
+	</changeSet>
+
+</databaseChangeLog>

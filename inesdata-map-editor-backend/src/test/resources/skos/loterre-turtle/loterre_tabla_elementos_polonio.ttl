@@ -1,0 +1,60 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix inist: <http://www.inist.fr/Ontology#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-Chemical_element>
+  skos:prefLabel "Elemento químico"@es, "Élément chimique"@fr, "Chemical element"@en ;
+  a isothes:ConceptGroup, skos:Collection ;
+  skos:member <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-JJFCNMVF-1>
+  skos:prefLabel "elemento del período 6"@es, "élément de la période 6"@fr, "period 6 element"@en ;
+  a skos:Concept ;
+  skos:narrower <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-Solid>
+  skos:prefLabel "Sólido"@es, "Solide"@fr, "Solid"@en ;
+  a isothes:ConceptGroup, skos:Collection ;
+  skos:member <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-W5376HQT-8>
+  skos:prefLabel "metal del bloque p"@es, "poor metal"@en, "métal pauvre"@fr ;
+  a skos:Concept ;
+  skos:narrower <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-J5C91RKF-C>
+  skos:prefLabel "élément du groupe 16"@fr, "elemento del grupo 16"@es, "group 16 element"@en ;
+  a skos:Concept ;
+  skos:narrower <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B>
+  skos:broader <http://data.loterre.fr/ark:/67375/8HQ-WWXW9H54-T>, <http://data.loterre.fr/ark:/67375/8HQ-J5C91RKF-C>, <http://data.loterre.fr/ark:/67375/8HQ-W5376HQT-8>, <http://data.loterre.fr/ark:/67375/8HQ-DL7B2WV0-F>, <http://data.loterre.fr/ark:/67375/8HQ-HZN73PXQ-G>, <http://data.loterre.fr/ark:/67375/8HQ-JJFCNMVF-1> ;
+  skos:exactMatch <http://fr.dbpedia.org/page/Polonium>, <http://es.dbpedia.org/page/Polonio>, <https://www.wikidata.org/wiki/Q979>, <https://fr.wikipedia.org/wiki/Polonium>, <https://en.wikipedia.org/wiki/Polonium>, <https://es.wikipedia.org/wiki/Polonio>, <http://dbpedia.org/page/Polonium> ;
+  skos:definition "elemento químico de número atómico 84 y símbolo Po"@es, "élément de numéro atomique 84 et de symbole Po"@fr, "chemical element with atomic number 84 and symbol Po"@en ;
+  skos:closeMatch obo:CHEBI_33313 ;
+  inist:semCategory "Chemical element"@en, "Solide"@fr, "Élément chimique"@fr, "Sólido"@es, "Elemento químico "@es, "Solid"@en ;
+  skos:altLabel "Po"@es, "Po"@fr, "Po"@en ;
+  skos:inScheme <http://data.loterre.fr/ark:/67375/8HQ> ;
+  a skos:Concept ;
+  dc11:identifier "http://data.loterre.fr/vocabs/TableauPerio/84" ;
+  skos:hiddenLabel "Polonio"@es, "Polonium"@fr, "Polonium"@en ;
+  skos:prefLabel "polonio"@es, "polonium"@fr, "polonium"@en .
+
+<http://data.loterre.fr/ark:/67375/8HQ> a skos:ConceptScheme .
+<http://data.loterre.fr/ark:/67375/8HQ-HZN73PXQ-G>
+  skos:prefLabel "élément du bloc p"@fr, "elemento del bloque p"@es, "p-block element"@en ;
+  a skos:Concept ;
+  skos:narrower <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-DL7B2WV0-F>
+  skos:prefLabel "elemento del grupo principal"@es, "élément du groupe principal"@fr, "main group element"@en ;
+  a skos:Concept ;
+  skos:narrower <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+
+<http://data.loterre.fr/ark:/67375/8HQ-WWXW9H54-T>
+  skos:prefLabel "calcógeno"@es, "chalcogène"@fr, "chalcogen"@en ;
+  a skos:Concept ;
+  skos:narrower <http://data.loterre.fr/ark:/67375/8HQ-HJN40QPV-B> .
+

@@ -1,0 +1,54 @@
+<div class="whiteContainer h-full">
+	<h1 class="category category__mapping mb-1">{{ "mappings.mapping.map" | translate }}</h1>
+	<label for="">{{ "mappings.mapping.map-name" | translate }}</label>
+	<input class="mb-2" type="text" pInputText [(ngModel)]="mappingName" (ngModelChange)="onMappingNameChange()" />
+	<label for="">{{ "mappings.mapping.map-base-url" | translate }}</label>
+	<input class="mb-2" type="text" pInputText [(ngModel)]="mappingBaseUrl" (ngModelChange)="onMappingBaseUrlChange()" />
+	<div>
+		{{ errorMessage }}
+	</div>
+	<!-- Fields table -->
+	<div *ngIf="mappingDTO && mappingDTO.fields?.length > 0">
+		<div *ngFor="let field of mappingDTO.fields; let fieldIndex = index" class="field-container mb-2">
+			<h3 class="category" [title]="field.subject.template">{{ "mappings.mapping.subject" | translate }}: {{ field.subject.template }}</h3>
+			<p-table *ngIf="field.predicates?.length > 0" class="mappingTable" [value]="field.predicates">
+				<ng-template pTemplate="header">
+					<tr>
+						<th id="object">{{ "mappings.mapping.object" | translate }}</th>
+						<th id="predicate">{{ "mappings.mapping.predicate" | translate }}</th>
+						<th id="options"></th>
+					</tr>
+				</ng-template>
+				<ng-template pTemplate="body" let-predicate let-index="rowIndex">
+					<tr>
+						<td [title]="predicate.objectMap | filterLiteralValue">
+							{{ predicate.objectMap | filterLiteralValue }}
+						</td>
+						<td [title]="predicate.predicate">
+							{{ predicate.predicate }}
+						</td>
+						<td>
+							<div class="flex flex-justify flex-justify-right">
+								<p-button
+									class="btn btn__icon icon-papelera mr-1"
+									(onClick)="deletePredicateFromField(fieldIndex, index)"
+									(keydown.enter)="deletePredicateFromField(fieldIndex, index)"
+								>
+								</p-button>
+							</div>
+						</td>
+					</tr>
+				</ng-template>
+			</p-table>
+		</div>
+	</div>
+
+	<div class="col-12 flex flex-justify-right p-0 mt-2">
+		<p-button
+			class="btn btn__primary"
+			[label]="mappingId ? ('mappings.mapping.edit' | translate) : ('mappings.mapping.build' | translate)"
+			(click)="generateMapping()"
+			(keydown.enter)="generateMapping()"
+		/>
+	</div>
+</div>

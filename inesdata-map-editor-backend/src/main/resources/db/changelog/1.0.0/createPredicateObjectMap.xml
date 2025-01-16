@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<changeSet author="gmv" id="1.0.0-predicate-object-map">
+		<createTable tableName="PREDICATE_OBJECT_MAP">
+			<column name="id" type="BIGINT" autoIncrement="true">
+				<constraints nullable="false" unique="true" primaryKey="true"/>
+			</column>
+			<column name="predicate" type="VARCHAR(255)">
+				<constraints nullable="true"/>
+			</column>
+			<column name="mapping_field_id" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+			<column name="version" type="BIGINT" defaultValueNumeric="0"/>
+		</createTable>
+
+		<addForeignKeyConstraint baseTableName="PREDICATE_OBJECT_MAP"
+        						 baseColumnNames="mapping_field_id"
+                                 constraintName="FK_predicate_object_map_predicate_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="MAPPING_FIELD"/>
+	</changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,2215 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "Service responsible for saving a data source mapping and generating the corresponding R2RML / RML mapping file",
+    "title": "com.inesdata-map:mapper-backend",
+    "version": "1.1.0-SNAPSHOT"
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "description": "Manage data sources",
+      "name": "DataSource"
+    },
+    {
+      "description": "Manage ontologies",
+      "name": "Ontology"
+    },
+    {
+      "description": "Manage database sources",
+      "name": "DataBaseSource"
+    },
+    {
+      "description": "Monitor and interact",
+      "externalDocs": {
+        "description": "Spring Boot Actuator Web API Documentation",
+        "url": "https://docs.spring.io/spring-boot/docs/current/actuator-api/html/"
+      },
+      "name": "Actuator"
+    },
+    {
+      "description": "Manage mappings",
+      "name": "Mapping"
+    },
+    {
+      "description": "Manage executions",
+      "name": "Execution"
+    },
+    {
+      "description": "Manage file sources",
+      "name": "FileSource"
+    }
+  ],
+  "paths": {
+    "/actuator": {
+      "get": {
+        "operationId": "links",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "$ref": "#/components/schemas/Link"
+                    }
+                  }
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "$ref": "#/components/schemas/Link"
+                    }
+                  }
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "$ref": "#/components/schemas/Link"
+                    }
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator root web endpoint",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/health": {
+      "get": {
+        "operationId": "health",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'health'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/health/**": {
+      "get": {
+        "operationId": "health-path",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'health-path'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/info": {
+      "get": {
+        "operationId": "info",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'info'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/loggers": {
+      "get": {
+        "operationId": "loggers",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'loggers'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/loggers/{name}": {
+      "get": {
+        "operationId": "loggers-name",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'loggers-name'",
+        "tags": [
+          "Actuator"
+        ]
+      },
+      "post": {
+        "operationId": "loggers-name_2",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "name",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string",
+                "enum": [
+                  "TRACE",
+                  "DEBUG",
+                  "INFO",
+                  "WARN",
+                  "ERROR",
+                  "FATAL",
+                  "OFF"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'loggers-name'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/metrics": {
+      "get": {
+        "operationId": "metrics",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'metrics'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/metrics/{requiredMetricName}": {
+      "get": {
+        "operationId": "metrics-requiredMetricName",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "requiredMetricName",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v2+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.spring-boot.actuator.v3+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'metrics-requiredMetricName'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/actuator/prometheus": {
+      "get": {
+        "operationId": "prometheus",
+        "responses": {
+          "200": {
+            "content": {
+              "application/openmetrics-text;version=1.0.0;charset=utf-8": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "application/vnd.google.protobuf;proto=io.prometheus.client.MetricFamily;encoding=delimited": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "text/plain;version=0.0.4;charset=utf-8": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Actuator web endpoint 'prometheus'",
+        "tags": [
+          "Actuator"
+        ]
+      }
+    },
+    "/data-sources": {
+      "get": {
+        "operationId": "listDataSources",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "in": "query",
+            "name": "size",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PageDataSourceDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "List all data sources",
+        "tags": [
+          "DataSource"
+        ]
+      }
+    },
+    "/data-sources/{id}": {
+      "delete": {
+        "operationId": "deleteDataSource",
+        "parameters": [
+          {
+            "description": "Data source identifier to delete",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "summary": "Delete data source",
+        "tags": [
+          "DataSource"
+        ]
+      }
+    },
+    "/database-sources": {
+      "post": {
+        "operationId": "createDataBaseSource",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataBaseSourceDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataSourceDTO"
+                }
+              }
+            },
+            "description": "Created"
+          }
+        },
+        "summary": "Create given data base source",
+        "tags": [
+          "DataBaseSource"
+        ]
+      }
+    },
+    "/database-sources/{id}": {
+      "get": {
+        "operationId": "getDataBaseSource",
+        "parameters": [
+          {
+            "description": "Data source identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataBaseSourceDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Gets given data base source",
+        "tags": [
+          "DataBaseSource"
+        ]
+      },
+      "put": {
+        "operationId": "updateDataBaseSource",
+        "parameters": [
+          {
+            "description": "Data base source identifier to update",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataBaseSourceDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataSourceDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Update given data base source",
+        "tags": [
+          "DataBaseSource"
+        ]
+      }
+    },
+    "/database-sources/{id}/table-column-names": {
+      "get": {
+        "description": "Retrieves a list of column names for the specified table name and a data source ID.",
+        "operationId": "getColumnNames",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "in": "query",
+            "name": "table",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get column names for a database table",
+        "tags": [
+          "DataBaseSource"
+        ]
+      }
+    },
+    "/database-sources/{id}/table-names": {
+      "get": {
+        "description": "Retrieves a list of table names for the specified data source ID.",
+        "operationId": "getTableNames",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get table names for a database source",
+        "tags": [
+          "DataBaseSource"
+        ]
+      }
+    },
+    "/executions/{id}/files": {
+      "get": {
+        "operationId": "downloadFile",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "in": "query",
+            "name": "filename",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Download the specified file from the given execution",
+        "tags": [
+          "Execution"
+        ]
+      }
+    },
+    "/file-sources": {
+      "get": {
+        "operationId": "getFileSourceByType",
+        "parameters": [
+          {
+            "description": "File source type",
+            "in": "query",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FileSourceDTO"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Gets all file sources filtered by type",
+        "tags": [
+          "FileSource"
+        ]
+      },
+      "post": {
+        "operationId": "createFileSource",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "body": {
+                    "$ref": "#/components/schemas/FileSourceDTO"
+                  },
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                },
+                "required": [
+                  "body"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataSourceDTO"
+                }
+              }
+            },
+            "description": "Created"
+          }
+        },
+        "summary": "Create given file source",
+        "tags": [
+          "FileSource"
+        ]
+      }
+    },
+    "/file-sources/{id}": {
+      "get": {
+        "operationId": "getFileSource",
+        "parameters": [
+          {
+            "description": "File source identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FileSourceDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Gets given data file source",
+        "tags": [
+          "FileSource"
+        ]
+      },
+      "put": {
+        "operationId": "updateFileSource",
+        "parameters": [
+          {
+            "description": "File source identifier to update",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileSourceDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DataSourceDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Updates given file source",
+        "tags": [
+          "FileSource"
+        ]
+      }
+    },
+    "/file-sources/{id}/attributes": {
+      "get": {
+        "operationId": "getFileAttributes",
+        "parameters": [
+          {
+            "description": "File source identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Gets all XML file attributes",
+        "tags": [
+          "FileSource"
+        ]
+      }
+    },
+    "/file-sources/{id}/fields": {
+      "get": {
+        "operationId": "getFileFields",
+        "parameters": [
+          {
+            "description": "File source identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Gets all CSV file fields",
+        "tags": [
+          "FileSource"
+        ]
+      }
+    },
+    "/mappings": {
+      "get": {
+        "operationId": "listMappings",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "in": "query",
+            "name": "size",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PageSearchMappingDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "List all mappings",
+        "tags": [
+          "Mapping"
+        ]
+      },
+      "post": {
+        "operationId": "create",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MappingDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MappingDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Create a new mapping",
+        "tags": [
+          "Mapping"
+        ]
+      }
+    },
+    "/mappings/{id}": {
+      "delete": {
+        "operationId": "deleteMapping",
+        "parameters": [
+          {
+            "description": "Mapping identifier to delete",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "summary": "Delete mapping",
+        "tags": [
+          "Mapping"
+        ]
+      },
+      "get": {
+        "operationId": "getMapping",
+        "parameters": [
+          {
+            "description": "Mapping identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MappingDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Gets given mapping",
+        "tags": [
+          "Mapping"
+        ]
+      },
+      "put": {
+        "operationId": "updateMapping",
+        "parameters": [
+          {
+            "description": "Mapping identifier to update",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MappingDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MappingDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Update given mapping",
+        "tags": [
+          "Mapping"
+        ]
+      }
+    },
+    "/mappings/{id}/executions": {
+      "get": {
+        "operationId": "listExecutions",
+        "parameters": [
+          {
+            "description": "Mapping identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "in": "query",
+            "name": "size",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PagedModelExecutionDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "List all executions for a mapping",
+        "tags": [
+          "Mapping"
+        ]
+      }
+    },
+    "/mappings/{id}/materialize": {
+      "post": {
+        "operationId": "materializeMapping",
+        "parameters": [
+          {
+            "description": "Mapping identifier to materialize",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "summary": "Materialize a mapping",
+        "tags": [
+          "Mapping"
+        ]
+      }
+    },
+    "/ontologies": {
+      "get": {
+        "operationId": "getOntologies",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchOntologyDTO"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get all ontologies",
+        "tags": [
+          "Ontology"
+        ]
+      },
+      "post": {
+        "operationId": "createOntology",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "body": {
+                    "$ref": "#/components/schemas/OntologyDTO"
+                  },
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                },
+                "required": [
+                  "body"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OntologyDTO"
+                }
+              }
+            },
+            "description": "Created"
+          }
+        },
+        "summary": "Create given ontology",
+        "tags": [
+          "Ontology"
+        ]
+      }
+    },
+    "/ontologies/paged": {
+      "get": {
+        "operationId": "listOntologies",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "page",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "in": "query",
+            "name": "size",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PageSearchOntologyDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "List all ontologies paged",
+        "tags": [
+          "Ontology"
+        ]
+      }
+    },
+    "/ontologies/{id}": {
+      "delete": {
+        "operationId": "deleteOntology",
+        "parameters": [
+          {
+            "description": "Ontology identifier to delete",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "summary": "Delete ontology",
+        "tags": [
+          "Ontology"
+        ]
+      },
+      "get": {
+        "operationId": "getOntologyClasses",
+        "parameters": [
+          {
+            "description": "Ontology identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get all ontology classes",
+        "tags": [
+          "Ontology"
+        ]
+      },
+      "put": {
+        "operationId": "updateOntology",
+        "parameters": [
+          {
+            "description": "Ontology identifier to update",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OntologyDTO"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OntologyDTO"
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Update given ontology",
+        "tags": [
+          "Ontology"
+        ]
+      }
+    },
+    "/ontologies/{id}/namespaces": {
+      "get": {
+        "operationId": "getNameSpaceMap",
+        "parameters": [
+          {
+            "description": "Ontology identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get ontology namespace and prefix map",
+        "tags": [
+          "Ontology"
+        ]
+      }
+    },
+    "/ontologies/{id}/{ontologyClass}": {
+      "get": {
+        "operationId": "getClassProperties",
+        "parameters": [
+          {
+            "description": "Ontology identifier",
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "description": "Ontology class",
+            "in": "path",
+            "name": "ontologyClass",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PropertyDTO"
+                  }
+                }
+              }
+            },
+            "description": "OK"
+          }
+        },
+        "summary": "Get all properties of the class",
+        "tags": [
+          "Ontology"
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DataBaseSourceDTO": {
+        "required": [
+          "connectionString",
+          "databaseType",
+          "name",
+          "password",
+          "userName"
+        ],
+        "type": "object",
+        "properties": {
+          "connectionString": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "databaseType": {
+            "type": "string",
+            "enum": [
+              "POSTGRESQL",
+              "MYSQL",
+              "H2",
+              "MONGO"
+            ]
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "DATABASE",
+              "FILE"
+            ]
+          },
+          "userName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "description": "The data base source to save"
+      },
+      "DataSourceDTO": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "DATABASE",
+              "FILE"
+            ]
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "ExecutionDTO": {
+        "type": "object",
+        "properties": {
+          "executionDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "knowledgeGraphFileName": {
+            "type": "string"
+          },
+          "logFileName": {
+            "type": "string"
+          },
+          "mappingFileName": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "FileSourceDTO": {
+        "required": [
+          "fileType",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "fileType": {
+            "type": "string",
+            "enum": [
+              "CSV",
+              "JSON",
+              "XML"
+            ]
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "DATABASE",
+              "FILE"
+            ]
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "description": "The file source to save"
+      },
+      "Link": {
+        "type": "object",
+        "properties": {
+          "href": {
+            "type": "string"
+          },
+          "templated": {
+            "type": "boolean"
+          }
+        }
+      },
+      "LogicalSourceDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "iterator": {
+            "type": "string"
+          },
+          "query": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "referenceFormulation": {
+            "type": "string"
+          },
+          "source": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "LogicalTableDTO": {
+        "required": [
+          "tableName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "query": {
+            "type": "string"
+          },
+          "tableName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "MappingDTO": {
+        "required": [
+          "baseUrl",
+          "fields",
+          "name",
+          "ontologyIds"
+        ],
+        "type": "object",
+        "properties": {
+          "baseUrl": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MappingFieldDTO"
+            }
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "namespaces": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NamespaceDTO"
+            }
+          },
+          "ontologyIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "description": "The mapping to update"
+      },
+      "MappingFieldDTO": {
+        "required": [
+          "dataSourceId"
+        ],
+        "type": "object",
+        "properties": {
+          "dataSourceId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "logicalSource": {
+            "$ref": "#/components/schemas/LogicalSourceDTO"
+          },
+          "logicalTable": {
+            "$ref": "#/components/schemas/LogicalTableDTO"
+          },
+          "predicates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PredicateObjectMapDTO"
+            }
+          },
+          "subject": {
+            "$ref": "#/components/schemas/SubjectMapDTO"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "NamespaceDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "iri": {
+            "type": "string"
+          },
+          "prefix": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "ObjectMapDTO": {
+        "required": [
+          "key"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "key": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "literalValue": {
+            "type": "string"
+          },
+          "objectValue": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ObjectMapDTO"
+            }
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "OntologyDTO": {
+        "required": [
+          "name",
+          "versionName"
+        ],
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "byte"
+            }
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "uploadDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "url": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "versionName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "description": "The ontology to save"
+      },
+      "PageDataSourceDTO": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DataSourceDTO"
+            }
+          },
+          "empty": {
+            "type": "boolean"
+          },
+          "first": {
+            "type": "boolean"
+          },
+          "last": {
+            "type": "boolean"
+          },
+          "number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberOfElements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageable": {
+            "$ref": "#/components/schemas/PageableObject"
+          },
+          "size": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
+          "totalElements": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "PageMetadata": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "size": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalElements": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "PageSearchMappingDTO": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchMappingDTO"
+            }
+          },
+          "empty": {
+            "type": "boolean"
+          },
+          "first": {
+            "type": "boolean"
+          },
+          "last": {
+            "type": "boolean"
+          },
+          "number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberOfElements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageable": {
+            "$ref": "#/components/schemas/PageableObject"
+          },
+          "size": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
+          "totalElements": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "PageSearchOntologyDTO": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchOntologyDTO"
+            }
+          },
+          "empty": {
+            "type": "boolean"
+          },
+          "first": {
+            "type": "boolean"
+          },
+          "last": {
+            "type": "boolean"
+          },
+          "number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "numberOfElements": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageable": {
+            "$ref": "#/components/schemas/PageableObject"
+          },
+          "size": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
+          "totalElements": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "PageableObject": {
+        "type": "object",
+        "properties": {
+          "offset": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paged": {
+            "type": "boolean"
+          },
+          "sort": {
+            "$ref": "#/components/schemas/SortObject"
+          },
+          "unpaged": {
+            "type": "boolean"
+          }
+        }
+      },
+      "PagedModelExecutionDTO": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExecutionDTO"
+            }
+          },
+          "page": {
+            "$ref": "#/components/schemas/PageMetadata"
+          }
+        }
+      },
+      "PredicateObjectMapDTO": {
+        "required": [
+          "objectMap",
+          "predicate"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "objectMap": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ObjectMapDTO"
+            }
+          },
+          "predicate": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "PropertyDTO": {
+        "required": [
+          "name",
+          "propertyType"
+        ],
+        "type": "object",
+        "properties": {
+          "associated": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "propertyType": {
+            "type": "string",
+            "enum": [
+              "DATA",
+              "OBJECT",
+              "ANNOTATION"
+            ]
+          }
+        }
+      },
+      "SearchMappingDTO": {
+        "type": "object",
+        "properties": {
+          "dataSources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "ontologies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "SearchOntologyDTO": {
+        "required": [
+          "name",
+          "url",
+          "versionName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": {
+            "maxLength": 255,
+            "minLength": 0,
+            "type": "string"
+          },
+          "uploadDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "url": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "versionName": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          }
+        }
+      },
+      "SortObject": {
+        "type": "object",
+        "properties": {
+          "empty": {
+            "type": "boolean"
+          },
+          "sorted": {
+            "type": "boolean"
+          },
+          "unsorted": {
+            "type": "boolean"
+          }
+        }
+      },
+      "SubjectMapDTO": {
+        "required": [
+          "className",
+          "template"
+        ],
+        "type": "object",
+        "properties": {
+          "className": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "template": {
+            "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      }
+    }
+  }
+}

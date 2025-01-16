@@ -1,0 +1,17 @@
+# Ignore everything
+
+**
+
+# Allow files and directories
+
+!docker/**
+!src/**
+!angular.json
+!package.json
+!package-lock.json
+!tsconfig.app.json
+!tsconfig.json
+!tsconfig.spec.json
+!eslint.config.js
+!projects/**
+!openapitools.json

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns5="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:ns6="http://publications.europa.eu/ontology/euvoc#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" >
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/1278">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/833">
+    <skos:related rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/1148">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/6715">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/2114">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/1892">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3931">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3952">
+    <rdf:type rdf:resource="http://eurovoc.europa.eu/schema#ThesaurusConcept" />
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-10-02</dcterms:created>
+    <owl:versionInfo>n/a</owl:versionInfo>
+    <skos:inScheme rdf:resource="http://eurovoc.europa.eu/100224" />
+    <skos:inScheme rdf:resource="http://eurovoc.europa.eu/100141" />
+    <skos:prefLabel xml:lang="ro">științele pământului</skos:prefLabel>
+    <skos:prefLabel xml:lang="ga">domhaneolaíocht</skos:prefLabel>
+    <skos:prefLabel xml:lang="sk">vedy o Zemi</skos:prefLabel>
+    <skos:prefLabel xml:lang="hu">földtudományok</skos:prefLabel>
+    <skos:prefLabel xml:lang="mk">науки за Земјата</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">geovetenskap</skos:prefLabel>
+    <skos:prefLabel xml:lang="bg">геологични науки</skos:prefLabel>
+    <skos:prefLabel xml:lang="pl">nauki o ziemi</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">ciencias de la tierra</skos:prefLabel>
+    <skos:prefLabel xml:lang="da">geovidenskaber</skos:prefLabel>
+    <skos:prefLabel xml:lang="cs">vědy o Zemi</skos:prefLabel>
+    <skos:prefLabel xml:lang="hr">geoznanosti</skos:prefLabel>
+    <skos:prefLabel xml:lang="lt">žemės mokslai</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">sciences de la terre</skos:prefLabel>
+    <skos:prefLabel xml:lang="lv">Zemes zinātnes</skos:prefLabel>
+    <skos:prefLabel xml:lang="fi">maankuorta tutkivat tieteet</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Geowissenschaften</skos:prefLabel>
+    <skos:prefLabel xml:lang="el">γεωλογικές επιστήμες</skos:prefLabel>
+    <skos:prefLabel xml:lang="et">maateadused</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">earth sciences</skos:prefLabel>
+    <skos:prefLabel xml:lang="mt">xjenza tad-dinja</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">aardkunde</skos:prefLabel>
+    <skos:prefLabel xml:lang="sl">vede o Zemlji</skos:prefLabel>
+    <skos:prefLabel xml:lang="sq">shkenca të tokës</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">ciências da Terra</skos:prefLabel>
+    <skos:prefLabel xml:lang="sr">науке о Земљи</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">geoscienze</skos:prefLabel>
+    <dcterms:identifier>3952</dcterms:identifier>
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/label_eb46101fb66650789fc698cbe471d514" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/473226" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/502725" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/141623" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/141624" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/187921" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/123308" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/343166" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/216502" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/332122" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/309930" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/404235" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/201934" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/283253" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/158292" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/428297" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/473227" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/231225" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/379947" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/269344" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/254189" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/173127" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/356412" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/418026" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/298689" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/xl_ga_e9eaa0810c" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/321017" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/488736" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/369376" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/141622" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/390707" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/187920" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/111140" />
+    <skos:notation>3952</skos:notation>
+    <skos:topConceptOf rdf:resource="http://eurovoc.europa.eu/100141" />
+    <skos:topConceptOf rdf:resource="http://eurovoc.europa.eu/100224" />
+    <ns6:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT" />
+    <ns6:xlNotation rdf:resource="http://eurovoc.europa.eu/note_52e0f7a98c35db44218f26eef78b4ffd" />
+    <skos:altLabel xml:lang="lt">žemės mokslas</skos:altLabel>
+    <skos:altLabel xml:lang="cs">geovědy</skos:altLabel>
+    <skos:altLabel xml:lang="cs">nauky o Zemi</skos:altLabel>
+    <skos:altLabel xml:lang="et">geoteadused</skos:altLabel>
+    <skos:altLabel xml:lang="mt">ġeoxjenzi</skos:altLabel>
+    <skos:altLabel xml:lang="mk">атмосферски науки</skos:altLabel>
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/1278" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/2114" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/3931" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/6715" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/1892" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/6390" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/1148" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/1151" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/c_a935cf3f" />
+    <skos:related rdf:resource="http://eurovoc.europa.eu/833" />
+    <dc:identifier>3952</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/1151">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/6390">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/100141">
+    <skos:hasTopConcept rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/100224">
+    <skos:hasTopConcept rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/c_a935cf3f">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/3952" />
+  </rdf:Description>
+</rdf:RDF>

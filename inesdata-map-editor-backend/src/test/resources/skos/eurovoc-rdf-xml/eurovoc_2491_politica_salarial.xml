@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns5="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:ns6="http://publications.europa.eu/ontology/euvoc#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" >
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/2491">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <rdf:type rdf:resource="http://eurovoc.europa.eu/schema#ThesaurusConcept" />
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-10-02</dcterms:created>
+    <owl:versionInfo>n/a</owl:versionInfo>
+    <skos:inScheme rdf:resource="http://eurovoc.europa.eu/100235" />
+    <skos:inScheme rdf:resource="http://eurovoc.europa.eu/100141" />
+    <skos:prefLabel xml:lang="mk">политика на плати</skos:prefLabel>
+    <skos:prefLabel xml:lang="ga">beartas pá</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">lönepolitik</skos:prefLabel>
+    <skos:prefLabel xml:lang="pt">política salarial</skos:prefLabel>
+    <skos:prefLabel xml:lang="bg">политика на възнагражденията</skos:prefLabel>
+    <skos:prefLabel xml:lang="nl">loonbeleid</skos:prefLabel>
+    <skos:prefLabel xml:lang="da">lønpolitik</skos:prefLabel>
+    <skos:prefLabel xml:lang="sr">политика плата</skos:prefLabel>
+    <skos:prefLabel xml:lang="sk">mzdová politika</skos:prefLabel>
+    <skos:prefLabel xml:lang="sq">politika e pagës</skos:prefLabel>
+    <skos:prefLabel xml:lang="sl">plačna politika</skos:prefLabel>
+    <skos:prefLabel xml:lang="cs">mzdová politika</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">pay policy</skos:prefLabel>
+    <skos:prefLabel xml:lang="hr">politika plaća</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lohnpolitik</skos:prefLabel>
+    <skos:prefLabel xml:lang="lv">atalgojuma politika</skos:prefLabel>
+    <skos:prefLabel xml:lang="hu">bérpolitika</skos:prefLabel>
+    <skos:prefLabel xml:lang="mt">politika dwar il-paga</skos:prefLabel>
+    <skos:prefLabel xml:lang="et">palgapoliitika</skos:prefLabel>
+    <skos:prefLabel xml:lang="fi">palkkapolitiikka</skos:prefLabel>
+    <skos:prefLabel xml:lang="lt">apmokėjimo politika</skos:prefLabel>
+    <skos:prefLabel xml:lang="fr">politique des salaires</skos:prefLabel>
+    <skos:prefLabel xml:lang="ro">politică salarială</skos:prefLabel>
+    <skos:prefLabel xml:lang="el">μισθολογική πολιτική</skos:prefLabel>
+    <skos:prefLabel xml:lang="pl">polityka płac</skos:prefLabel>
+    <skos:prefLabel xml:lang="es">política salarial</skos:prefLabel>
+    <skos:prefLabel xml:lang="it">politica salariale</skos:prefLabel>
+    <dcterms:identifier>2491</dcterms:identifier>
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/174339" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/467403" />
+    <ns5:altLabel rdf:resource="http://eurovoc.europa.eu/232244" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/322013" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/159241" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/188879" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/391586" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/143007" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/344158" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/310425" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/270283" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/467404" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/418934" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/466717" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/111645" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/380467" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/332641" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/428827" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/357280" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/124370" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/255433" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/202928" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/405253" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/232243" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/370293" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/299876" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/xl_ga_433cc5cae0" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/284229" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/217535" />
+    <ns5:prefLabel rdf:resource="http://eurovoc.europa.eu/174338" />
+    <skos:notation>2491</skos:notation>
+    <skos:topConceptOf rdf:resource="http://eurovoc.europa.eu/100235" />
+    <skos:topConceptOf rdf:resource="http://eurovoc.europa.eu/100141" />
+    <ns6:status rdf:resource="http://publications.europa.eu/resource/authority/concept-status/CURRENT" />
+    <ns6:xlNotation rdf:resource="http://eurovoc.europa.eu/note_8269a774cfde43b4a2f6661ab51c8f30" />
+    <skos:altLabel xml:lang="fr">politique salariale</skos:altLabel>
+    <skos:altLabel xml:lang="mk">политика на плата</skos:altLabel>
+    <skos:altLabel xml:lang="de">Gehaltspolitik</skos:altLabel>
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/3850" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/3553" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/3849" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/3653" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/3555" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/1026" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/687" />
+    <skos:narrower rdf:resource="http://eurovoc.europa.eu/1866" />
+    <skos:related rdf:resource="http://eurovoc.europa.eu/2461" />
+    <skos:related rdf:resource="http://eurovoc.europa.eu/2490" />
+    <dc:identifier>2491</dc:identifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3850">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/1866">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3653">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3553">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3555">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/2461">
+    <skos:related rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/3849">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/1026">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/687">
+    <skos:broader rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/2490">
+    <skos:related rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/100141">
+    <skos:hasTopConcept rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://eurovoc.europa.eu/100235">
+    <skos:hasTopConcept rdf:resource="http://eurovoc.europa.eu/2491" />
+  </rdf:Description>
+</rdf:RDF>

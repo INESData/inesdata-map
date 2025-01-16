@@ -1,0 +1,29 @@
+<div [formGroup]="fileSourceForm">
+	<!-- FILE inputs -->
+	<div *ngIf="!isEditMode()">
+		<p class="mb-1">{{ "labels.data-source-file" | translate }}</p>
+		<div class="grid">
+			<div class="col-12">
+				<div class="flex">
+					<label class="customfileUpload">
+						{{ "labels.import" | translate }}
+						<input class="fileUploader" type="file" pInputText (change)="onFileSelected($event)" />
+					</label>
+					<span class="fileName" [class.selected]="fileSelected">{{ fileName }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- NAME input -->
+	<div>
+		<div class="grid">
+			<div class="col-12">
+				<label for="">{{ "labels.name" | translate }}</label>
+				<input type="text" pInputText formControlName="name" />
+				<div *ngIf="checkError('name', fileSourceForm)" class="error-message">
+					{{ showErrorMessage("name", fileSourceForm) }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

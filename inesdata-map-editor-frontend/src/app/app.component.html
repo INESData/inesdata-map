@@ -1,0 +1,18 @@
+<!-- Header component -->
+<app-header></app-header>
+<app-notification></app-notification>
+<div class="d-flex container">
+	<!-- Sidebar component -->
+	<app-sidebar class="w-25"></app-sidebar>
+
+	<!-- Main content area -->
+	<div class="flex-grow-1 p-4">
+		<router-outlet></router-outlet>
+	</div>
+</div>
+
+<!-- Spinner service -->
+<div *ngIf="spinnerService.loading" class="loading p-d-flex p-justify-center p-align-center" role="alert" aria-live="assertive">
+	<p-progressSpinner></p-progressSpinner>
+	<p class="loadint__text">Content is loading...</p>
+</div>

@@ -1,0 +1,64 @@
+<div class="whiteContainer w-500">
+	<h1 class="mb-3">{{ "data-sources.data-source.list" | translate }}</h1>
+	<p-button (onClick)="showDialog()" class="btn btn__secondary" [label]="'data-sources.data-source.add' | translate" />
+	<p-table class="mt-2 block" [value]="dataSources">
+		<ng-template pTemplate="header">
+			<tr>
+				<th scope="col">{{ "labels.name" | translate }}</th>
+				<th scope="col">{{ "labels.type" | translate }}</th>
+				<th scope="col"></th>
+			</tr>
+		</ng-template>
+		<ng-template pTemplate="body" let-datasource>
+			<tr>
+				<td [title]="datasource.name">{{ datasource.name }}</td>
+				<td>{{ datasource.type }}</td>
+				<td>
+					<div class="flex flex-justify flex-justify-right">
+						<p-button class="btn btn__icon icon-lapiz mr-1" (onClick)="showDialog(datasource)" />
+						<p-button class="btn btn__icon icon-papelera" (onClick)="showDialogDelete(datasource)" />
+					</div>
+				</td>
+			</tr>
+		</ng-template>
+	</p-table>
+	<!-- Paginator -->
+	<app-paginator [paginationInfo]="paginationInfo" (pageChange)="onPageChange($event)"> ></app-paginator>
+</div>
+
+<!-- Add/edit dialog -->
+<p-dialog [header]="header" [modal]="true" [draggable]="false" [(visible)]="addDialogVisible" [style]="{ width: '40rem' }">
+	<app-data-sources-form
+		*ngIf="addDialogVisible"
+		[isEditMode]="isEditMode"
+		(formSubmitted)="onFormSubmitted()"
+		(dialog)="addDialogVisible = false"
+		[selectedDataSource]="selectedDataSource"
+	></app-data-sources-form>
+</p-dialog>
+
+<!-- Delete dialog -->
+<p-dialog
+	[header]="'data-sources.data-source.confirmation' | translate"
+	[modal]="true"
+	[draggable]="false"
+	[(visible)]="deleteDialogVisible"
+	[style]="{ width: '40rem' }"
+>
+	<div class="flex flex-justify-right w-full">
+		<p-button
+			class="btn btn__primary mr-2"
+			[label]="'labels.delete' | translate"
+			type="button"
+			(click)="deleteDataSource(selectedDataSource?.id)"
+			(keydown.enter)="deleteDataSource(selectedDataSource?.id)"
+		/>
+		<p-button
+			class="btn btn__secondary"
+			[label]="'labels.cancel' | translate"
+			type="button"
+			(click)="cancelDelete()"
+			(keydown.enter)="cancelDelete()"
+		/>
+	</div>
+</p-dialog>

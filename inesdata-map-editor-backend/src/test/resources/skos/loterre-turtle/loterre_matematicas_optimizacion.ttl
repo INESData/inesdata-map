@@ -1,0 +1,88 @@
+@prefix psr: <http://data.loterre.fr/ark:/67375/PSR> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+psr:-QL0GMPR2-2
+  skos:prefLabel "fonction de Rastrigin"@fr, "Rastrigin function"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-TL90LWRL-H
+  skos:prefLabel "moment problem"@en, "problème des moments"@fr ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-ZBQ8QJCZ-2
+  skos:prefLabel "Rosenbrock function"@en, "fonction de Rosenbrock"@fr ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-RXNJS1M1-N
+  skos:prefLabel "inégalité matricielle linéaire"@fr, "linear matrix inequality"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-SL2L73GZ-C
+  skos:prefLabel "optimisation combinatoire"@fr, "combinatorial optimization"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-DHDTKN7V-B
+  skos:prefLabel "subderivative"@en, "sous-différentiel"@fr ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-VH4F4166-V
+  skos:prefLabel "lemme de Farkas"@fr, "Farkas' lemma"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-X0KPF7JX-6
+  skos:prefLabel "méthode des multiplicateurs de Lagrange"@fr, "method of Lagrange multipliers"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-JZC5LRN2-1
+  skos:prefLabel "fonction quasi-convexe"@fr, "quasiconvex function"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:
+  a skos:ConceptScheme ;
+  skos:hasTopConcept psr:-XJ7K95G7-L .
+
+psr:-XJ7K95G7-L
+  skos:narrower psr:-ZG65653K-D, psr:-SVQC69PF-C, psr:-TXHDJTKP-1, psr:-TL90LWRL-H, psr:-VMJK1FFL-L, psr:-QL0GMPR2-2, psr:-X0KPF7JX-6, psr:-ZBQ8QJCZ-2, psr:-Q8H0F473-5, psr:-VH4F4166-V, psr:-SL2L73GZ-C, psr:-RXNJS1M1-N, psr:-DHDTKN7V-B, psr:-JZC5LRN2-1 ;
+  skos:inScheme psr: ;
+  skos:definition """L'optimisation est une branche des mathématiques cherchant à modéliser, à analyser et à résoudre analytiquement ou numériquement les problèmes qui consistent à minimiser ou maximiser une fonction sur un ensemble. L’optimisation joue un rôle important en recherche opérationnelle (domaine à la frontière entre l'informatique, les mathématiques et l'économie), dans les mathématiques appliquées (fondamentales pour l'industrie et l'ingénierie), en analyse et en analyse numérique, en statistique pour l’estimation du maximum de vraisemblance d’une distribution, pour la recherche de stratégies dans le cadre de la théorie des jeux, ou encore en théorie du contrôle et de la commande. 
+<br/>(Wikipedia, L'Encylopédie Libre, <a href="https://fr.wikipedia.org/wiki/Optimisation_(math%C3%A9matiques)">https://fr.wikipedia.org/wiki/Optimisation_(math%C3%A9matiques)</a>)"""@fr, """Mathematical optimization (alternatively spelled optimisation) or mathematical programming is the selection of a best element, with regard to some criterion, from some set of available alternatives. It is generally divided into two subfields: discrete optimization and continuous optimization. Optimization problems arise in all quantitative disciplines from computer science and engineering to operations research and economics, and the development of solution methods has been of interest in mathematics for centuries. In the more general approach, an optimization problem consists of maximizing or minimizing a real function by systematically choosing input values from within an allowed set and computing the value of the function. The generalization of optimization theory and techniques to other formulations constitutes a large area of applied mathematics. More generally, optimization includes finding "best available" values of some objective function given a defined domain (or input), including a variety of different types of objective functions and different types of domains.  
+<br/>(Wikipedia, The Free Encyclopedia, <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">https://en.wikipedia.org/wiki/Mathematical_optimization</a>)"""@en ;
+  skos:prefLabel "optimization"@en, "optimisation"@fr ;
+  skos:exactMatch <https://en.wikipedia.org/wiki/Mathematical_optimization>, <https://fr.wikipedia.org/wiki/Optimisation_(math%C3%A9matiques)> ;
+  skos:topConceptOf psr: ;
+  a skos:Concept .
+
+psr:-VMJK1FFL-L
+  skos:prefLabel "extremum"@en, "extremum"@fr ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-ZG65653K-D
+  skos:prefLabel "cône tangent"@fr, "tangent cone"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-SVQC69PF-C
+  skos:prefLabel "Minkowski functional"@en, "fonctionnelle de Minkowski"@fr ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-TXHDJTKP-1
+  skos:prefLabel "Fagnano's problem"@en, "problème de Fagnano"@fr ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+
+psr:-Q8H0F473-5
+  skos:prefLabel "fonction de Himmelblau"@fr, "Himmelblau's function"@en ;
+  a skos:Concept ;
+  skos:broader psr:-XJ7K95G7-L .
+

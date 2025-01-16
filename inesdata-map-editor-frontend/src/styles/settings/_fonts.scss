@@ -1,0 +1,99 @@
+@font-face {
+	font-family: "Baloo 2";
+	font-weight: 400;
+	src: url("../../assets/fonts/Baloo_2/Baloo2-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Baloo 2";
+	font-weight: 500;
+	src: url("../../assets/fonts/Baloo_2/Baloo2-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Baloo 2";
+	font-weight: 600;
+	src: url("../../assets/fonts/Baloo_2/Baloo2-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Baloo 2";
+	font-weight: 800;
+	src: url("../../assets/fonts/Baloo_2/Baloo2-Bold.ttf");
+}
+
+// ICOMOON
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../../assets/fonts/Icons/icomoon.eot?mm0jbw");
+	src:
+		url("../../assets/fonts/Icons/icomoon.eot?mm0jbw#iefix") format("embedded-opentype"),
+		url("../../assets/fonts/Icons/icomoon.ttf?mm0jbw") format("truetype"),
+		url("../../assets/fonts/Icons/icomoon.woff?mm0jbw") format("woff"),
+		url("../../assets/fonts/Icons/icomoon.svg?mm0jbw#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon", serif !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-search:before {
+	content: "\e90d";
+}
+.icon-chevron:before {
+	content: "\e90e";
+}
+.icon-query:before {
+	content: "\e900";
+}
+.icon-mas:before {
+	content: "\e901";
+}
+.icon-ojo:before {
+	content: "\e902";
+}
+.icon-play:before {
+	content: "\e903";
+}
+.icon-ordenar:before {
+	content: "\e904";
+}
+.icon-cruz:before {
+	content: "\e905";
+}
+.icon-papelera:before {
+	content: "\e906";
+}
+.icon-lapiz:before {
+	content: "\e907";
+}
+.icon-ajustes:before {
+	content: "\e908";
+}
+.icon-mapeos:before {
+	content: "\e909";
+}
+.icon-datos:before {
+	content: "\e90a";
+}
+.icon-ontologia:before {
+	content: "\e90b";
+}
+.icon-usuario:before {
+	content: "\e90c";
+}

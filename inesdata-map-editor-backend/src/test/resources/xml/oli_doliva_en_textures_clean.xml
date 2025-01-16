@@ -1,0 +1,1048 @@
+<root>
+	<author>TERMCAT, Centre de Terminologia</author>
+	<title>
+		<original>Oli d'oliva en textures</original>
+		<clean>oli_doliva_en_textures</clean>
+	</title>
+	<lexicalData>
+		<lexConcept tcID="1" conceptID="oli_doliva_en_textures_C1">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C1_ca_aire_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_ca_aire_doli_noun_form_masculine">aire d'oli<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" normAuth="">
+					<synRel with="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_oil_air_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_form_feminine">escuma lleugera d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" normAuth="deprecated">
+					<synRel with="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_oil_air_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C1_es_aire_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_form_masculine">aire de aceite<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_oil_air_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_form_feminine">espuma ligera de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_oil_air_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C1_fr_air_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_fr_air_dhuile_noun_form_masculine">air d'huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_en_oil_air_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C1_en_light_oil_foam_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_en_light_oil_foam_noun_form">light oil foam</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C1_en_oil_air_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C1_en_oil_air_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C1_en_oil_air_noun_form">oil air</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C1_en_oil_air_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C1_ca_aire_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_ca_escuma_lleugera_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_aire_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_es_espuma_ligera_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C1_fr_air_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C1_en_light_oil_foam_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C1_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, resultant de la barreja d'oli d'oliva amb un o més texturitzants, que poden ser la lecitina de soja (E 322), el més habitual, la metilcel·lulosa (E 461) o el sucroèster (E 473).</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="2" conceptID="oli_doliva_en_textures_C2">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C2_ca_caviar_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_ca_caviar_doli_noun_form_masculine">caviar d'oli<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" normAuth="">
+					<synRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_form_masculine">encapsulat d'oli<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" normAuth="deprecated">
+					<synRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_form_masculine">caviar de aceite<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_form_masculine">encapsulado de aceite<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_form_masculine">caviar d'huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_fr_huile_capsule_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_fr_huile_capsule_noun_form_masculine">huile capsulé<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_en_encapsulated_oil_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_form">encapsulated oil</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C2_en_oil_caviar_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C2_en_oil_caviar_noun_form">oil caviar</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C2_en_oil_caviar_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C2_ca_caviar_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_ca_encapsulat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_caviar_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_es_encapsulado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_caviar_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C2_fr_huile_capsule_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C2_en_encapsulated_oil_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C2_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat en forma de petites esferes d'oli amb una tènue membrana flexible, molt fina, que, en el moment de ser ingerides, esclaten a la boca i alliberen l'oli líquid que contenen.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="3" conceptID="oli_doliva_en_textures_C3">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C3_ca_crema_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C3_ca_crema_doli_noun_form_feminine">crema d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C3_ca_crema_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C3_es_crema_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_fr_creme_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_en_oil_cream_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_en_olive_oil_cream_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C3_es_crema_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C3_es_crema_de_aceite_noun_form_feminine">crema de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C3_es_crema_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C3_ca_crema_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_fr_creme_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_en_oil_cream_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_en_olive_oil_cream_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C3_fr_creme_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C3_fr_creme_dhuile_noun_form_feminine">crème d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C3_fr_creme_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C3_ca_crema_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_es_crema_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_en_oil_cream_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_en_olive_oil_cream_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C3_en_oil_cream_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C3_en_oil_cream_noun_form">oil cream</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C3_en_oil_cream_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C3_ca_crema_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_es_crema_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_fr_creme_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C3_en_olive_oil_cream_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C3_en_olive_oil_cream_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C3_en_olive_oil_cream_noun_form">olive oil cream</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C3_en_olive_oil_cream_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C3_ca_crema_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_es_crema_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C3_fr_creme_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C3_en_oil_cream_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C3_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, resultant de la barreja d'oli d'oliva, aigua i gelatina, que forma un gel tou i amb poca consistència.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="4" conceptID="oli_doliva_en_textures_C4">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C4_ca_crispetes_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C4_ca_crispetes_doli_noun_form_feminine_plural">crispetes d'oli<gender>feminine</gender>
+					<number>plural</number>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C4_ca_crispetes_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_fr_popcorn_huile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_en_oil_popcorn_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun_form_feminine_plural">palomitas de aceite<gender>feminine</gender>
+					<number>plural</number>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C4_ca_crispetes_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_fr_popcorn_huile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_en_oil_popcorn_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun_form_masculine">pop-corn d'huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C4_ca_crispetes_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C4_fr_popcorn_huile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_en_oil_popcorn_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C4_fr_popcorn_huile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C4_fr_popcorn_huile_noun_form_masculine">pop-corn huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C4_fr_popcorn_huile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C4_ca_crispetes_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_en_oil_popcorn_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C4_en_oil_popcorn_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C4_en_oil_popcorn_noun_form">oil popcorn</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C4_en_oil_popcorn_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C4_ca_crispetes_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_es_palomitas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_fr_popcorn_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C4_fr_popcorn_huile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C4_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, d'aparença esponjosa i de color groguenc, resultat de la congelació amb nitrogen líquid d'una escuma d'oli i gelatina, obtinguda amb un sifó.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="5" conceptID="oli_doliva_en_textures_C5">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C5_ca_destillat_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_ca_destillat_doli_noun_form_masculine">destil·lat d'oli<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_form_masculine">destilado de aceite<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_form_masculine">distillat d'huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_form_feminine">distillation d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C5_en_distillate_of_oil_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_form">distillate of oil</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C5_en_oil_distillate_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_en_oil_distillate_noun_form">oil distillate</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C5_en_oil_distillation_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C5_en_oil_distillation_noun_form">oil distillation</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C5_en_oil_distillation_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C5_ca_destillat_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_es_destilado_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillat_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C5_fr_distillation_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_en_distillate_of_oil_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C5_en_oil_distillate_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C5_definitionSet_ca" language="ca">
+					<definition>Elaboració derivada de les substàncies volàtils de l'oli d'oliva extretes en forma d'hidrolat.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="6" conceptID="oli_doliva_en_textures_C6">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C6_ca_maionesa_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_form_feminine">maionesa d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" normAuth="">
+					<synRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_ca_emulsio_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_form_feminine">emulsió d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" normAuth="deprecated">
+					<synRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_form_feminine">mayonesa de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_form_masculine">mayonesa de aceite de oliva<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_form_feminine">mayonnaise à l'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_form_feminine">mayonnaise d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_form_feminine">mayonnaise d'huile d'olive<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_form">oil mayonnaise</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_form">olive oil mayonnaise</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C6_en_olive_oil_mayonnaise_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C6_ca_maionesa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_ca_emulsio_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_es_mayonesa_de_aceite_de_oliva_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_a_lhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C6_fr_mayonnaise_dhuile_dolive_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C6_en_oil_mayonnaise_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C6_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat amb aigua i goma xantana (E 415), que recorda la maionesa tradicional.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="7" conceptID="oli_doliva_en_textures_C7">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C7_ca_escuma_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C7_ca_escuma_doli_noun_form_feminine">escuma d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C7_ca_escuma_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C7_es_espuma_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_fr_ecume_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_en_oil_foam_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C7_es_espuma_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C7_es_espuma_de_aceite_noun_form_feminine">espuma de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C7_es_espuma_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C7_ca_escuma_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_fr_ecume_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_en_oil_foam_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C7_fr_ecume_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C7_fr_ecume_dhuile_noun_form_feminine">écume d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C7_fr_ecume_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C7_ca_escuma_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_es_espuma_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_en_oil_foam_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C7_en_oil_foam_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C7_en_oil_foam_noun_form">oil foam</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C7_en_oil_foam_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C7_ca_escuma_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_es_espuma_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C7_fr_ecume_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C7_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturizat, consistent en una emulsió produïda dispersant òxid de dinitrogen (N&lt;sub&gt;2&lt;/sub&gt;O) en oli d'oliva, que dona com a resultat una crema de textura esponjosa, densa i amb certa viscositat.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="8" conceptID="oli_doliva_en_textures_C8">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C8_ca_flam_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C8_ca_flam_doli_noun_form_masculine">flam d'oli<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C8_ca_flam_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C8_es_flan_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_fr_flan_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C8_es_flan_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C8_es_flan_de_aceite_noun_form_masculine">flan de aceite<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C8_es_flan_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C8_ca_flam_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_fr_flan_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun_form_feminine">crème caramel à l'huile d'olive<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C8_ca_flam_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_es_flan_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C8_fr_flan_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C8_fr_flan_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C8_fr_flan_dhuile_noun_form_masculine">flan d'huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C8_fr_flan_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C8_ca_flam_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_es_flan_de_aceite_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun_form">oil cream caramel</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C8_en_oil_cream_caramel_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C8_ca_flam_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_es_flan_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_fr_creme_caramel_a_lhuile_dolive_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C8_fr_flan_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C8_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat amb aigua i carragenat iota (E 407), que recorda el flam tradicional per la seva textura de gel tou i suau en boca.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="9" conceptID="oli_doliva_en_textures_C9">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C9_ca_gelatina_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C9_ca_gelatina_doli_noun_form_feminine">gelatina d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C9_ca_gelatina_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C9_es_gelatina_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_fr_gelee_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_en_oil_jelly_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C9_es_gelatina_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C9_es_gelatina_de_aceite_noun_form_feminine">gelatina de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C9_es_gelatina_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C9_ca_gelatina_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_fr_gelee_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_en_oil_jelly_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C9_fr_gelee_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C9_fr_gelee_dhuile_noun_form_feminine">gelée d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C9_fr_gelee_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C9_ca_gelatina_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_es_gelatina_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_en_oil_jelly_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C9_en_oil_jelly_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C9_en_oil_jelly_noun_form">oil jelly</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C9_en_oil_jelly_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C9_ca_gelatina_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_es_gelatina_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C9_fr_gelee_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C9_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, resultant de la barreja d'oli d'oliva amb un producte gelificant i aigua.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="10" conceptID="oli_doliva_en_textures_C10">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C10_ca_mantega_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C10_ca_mantega_doli_noun_form_feminine">mantega d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C10_ca_mantega_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C10_es_mantequilla_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_fr_beurre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_en_oil_butter_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C10_es_mantequilla_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C10_es_mantequilla_de_aceite_noun_form_feminine">mantequilla de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C10_es_mantequilla_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C10_ca_mantega_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_fr_beurre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_en_oil_butter_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C10_fr_beurre_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C10_fr_beurre_dhuile_noun_form_feminine">beurre d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C10_fr_beurre_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C10_ca_mantega_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_es_mantequilla_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_en_oil_butter_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C10_en_oil_butter_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C10_en_oil_butter_noun_form">oil butter</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C10_en_oil_butter_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C10_ca_mantega_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_es_mantequilla_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C10_fr_beurre_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C10_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, obtinguda mitjançant l'emulsió d'un greix saturat o un monoglicèrid i oli, o sotmetent l'oli d'oliva a baixes temperatures durant el temps suficient.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="11" conceptID="oli_doliva_en_textures_C11">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C11_ca_mel_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C11_ca_mel_doli_noun_form_feminine">mel d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C11_ca_mel_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C11_es_miel_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_fr_miel_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_en_oil_honey_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C11_es_miel_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C11_es_miel_de_aceite_noun_form_feminine">miel de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C11_es_miel_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C11_ca_mel_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_fr_miel_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_en_oil_honey_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C11_fr_miel_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C11_fr_miel_dhuile_noun_form_feminine">miel d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C11_fr_miel_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C11_ca_mel_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_es_miel_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_en_oil_honey_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C11_en_oil_honey_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C11_en_oil_honey_noun_form">oil honey</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C11_en_oil_honey_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C11_ca_mel_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_es_miel_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C11_fr_miel_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C11_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, viscosa, dolça i groguenca, feta amb aigua, oli d'oliva i sucres que actuen d'agents texturitzants i que li confereixen una textura semblant a la mel.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="12" conceptID="oli_doliva_en_textures_C12">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C12_ca_nuvol_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C12_ca_nuvol_doli_noun_form_masculine">núvol d'oli<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C12_ca_nuvol_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C12_es_nube_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_fr_guimauve_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_en_oil_cloud_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C12_es_nube_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C12_es_nube_de_aceite_noun_form_feminine">nube de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C12_es_nube_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C12_ca_nuvol_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_fr_guimauve_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_en_oil_cloud_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C12_fr_guimauve_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C12_fr_guimauve_dhuile_noun_form_feminine">guimauve d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C12_fr_guimauve_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C12_ca_nuvol_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_es_nube_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_en_oil_cloud_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C12_en_oil_cloud_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C12_en_oil_cloud_noun_form">oil cloud</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C12_en_oil_cloud_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C12_ca_nuvol_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_es_nube_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C12_fr_guimauve_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C12_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat amb gelatina de cola de peix, en làmines, o gelatina en pols, i aigua, de textura esponjosa, escumosa i elàstica, amb certa consistència.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="13" conceptID="oli_doliva_en_textures_C13">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C13_ca_pols_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_ca_pols_doli_noun_form_feminine">pols d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" normAuth="">
+					<synRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_form_masculine">oli polvoritzat<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" normAuth="deprecated">
+					<synRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_ca_sorra_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_ca_sorra_doli_noun_form_feminine">sorra d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" normAuth="deprecated">
+					<synRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_es_migas_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_form_feminine_plural">migas de aceite<gender>feminine</gender>
+					<number>plural</number>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_form_masculine">polvo de aceite<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_form_masculine">poudre d'huile<gender>masculine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_en_oil_dust_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_en_oil_dust_noun_form">oil dust</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_en_oil_powder_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_en_oil_powder_noun_form">oil powder</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C13_en_olive_oil_powder_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_form">olive oil powder</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C13_en_olive_oil_powder_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C13_ca_pols_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_oli_polvoritzat_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_ca_sorra_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_migas_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_es_polvo_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C13_fr_poudre_dhuile_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_en_oil_dust_noun_sense" />
+					<synRel with="oli_doliva_en_textures_C13_en_oil_powder_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C13_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat que s'obté a partir d'una barreja d'oli amb maltodextrina i, eventualment, altres components, que dona com a resultat una pols granulosa i fina.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+		<lexConcept tcID="14" conceptID="oli_doliva_en_textures_C14">
+			<domains schemeID="oli_doliva_en_textures_domainScheme">
+				<domain>
+					<topic domainID="oli_doliva_en_textures_Oli_doliva_en_textures" type="topDomain" narrower="" broader="">Oli d'oliva en textures</topic>
+				</domain>
+			</domains>
+			<lexEntry entryID="oli_doliva_en_textures_C14_ca_sopa_doli_noun" entryType="lexicalEntry" language="ca" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C14_ca_sopa_doli_noun_form_feminine">sopa d'oli<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C14_ca_sopa_doli_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C14_es_sopa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_fr_soupe_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_en_oil_soup_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C14_es_sopa_de_aceite_noun" entryType="lexicalEntry" language="es" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C14_es_sopa_de_aceite_noun_form_feminine">sopa de aceite<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C14_es_sopa_de_aceite_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C14_ca_sopa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_fr_soupe_dhuile_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_en_oil_soup_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C14_fr_soupe_dhuile_noun" entryType="lexicalEntry" language="fr" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C14_fr_soupe_dhuile_noun_form_feminine">soupe d'huile<gender>feminine</gender>
+				</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C14_fr_soupe_dhuile_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C14_ca_sopa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_es_sopa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_en_oil_soup_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<lexEntry entryID="oli_doliva_en_textures_C14_en_oil_soup_noun" entryType="lexicalEntry" language="en" pos="noun">
+				<lexForm formID="oli_doliva_en_textures_C14_en_oil_soup_noun_form">oil soup</lexForm>
+				<lexSense senseID="oli_doliva_en_textures_C14_en_oil_soup_noun_sense" normAuth="">
+					<transRel with="oli_doliva_en_textures_C14_ca_sopa_doli_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_es_sopa_de_aceite_noun_sense" />
+					<transRel with="oli_doliva_en_textures_C14_fr_soupe_dhuile_noun_sense" />
+				</lexSense>
+			</lexEntry>
+			<definitions>
+				<definitionSet definitionsID="oli_doliva_en_textures_C14_definitionSet_ca" language="ca">
+					<definition>Elaboració d'oli d'oliva texturitzat, que s'obté per emulsió d'un líquid de base aquosa, com ara aigua, brou o infusió, i un oli vegetal, amb l'ajuda d'un producte que actua com a estabilitzant, generalment goma xantana o tapioca, tot i que també es pot fer servir metilcel·lulosa (E 461) o goma de garrofí (E 410), entre d'altres.</definition>
+				</definitionSet>
+			</definitions>
+		</lexConcept>
+	</lexicalData>
+</root>

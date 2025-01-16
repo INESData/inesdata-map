@@ -1,0 +1,63 @@
+<form [formGroup]="ontologyForm" (ngSubmit)="onSubmit()">
+	<!-- File Input -->
+	<div *ngIf="!isEditMode">
+		<p class="mb-0">{{ "labels.ontology-file" | translate }}</p>
+		<div class="grid mt-1">
+			<div class="col-12">
+				<div class="flex">
+					<label class="customfileUpload">
+						{{ "labels.import" | translate }}
+						<input class="fileUploader" type="file" pInputText (change)="onFileSelected($event)" />
+					</label>
+					<span class="fileName" [class.selected]="fileSelected">{{ fileName }}</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Ontology Inputs -->
+	<div class="grid">
+		<div class="col-6">
+			<div>
+				<label for="Name">{{ "labels.name" | translate }}</label>
+				<input type="text" pInputText formControlName="name" />
+				<div *ngIf="hasError('name')" class="error-message">
+					{{ getErrorMessage("name") }}
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div>
+				<label for="Title">{{ "labels.title" | translate }}</label>
+				<input type="text" pInputText formControlName="title" />
+			</div>
+		</div>
+	</div>
+	<div class="grid">
+		<div class="col-9">
+			<div>
+				<label for="URL">{{ "labels.url" | translate }}</label>
+				<input type="text" pInputText formControlName="url" />
+			</div>
+		</div>
+		<div class="col-3">
+			<div>
+				<label for="Version">{{ "labels.version_name" | translate }}</label>
+				<input type="text" pInputText formControlName="versionName" />
+				<div *ngIf="hasError('versionName')" class="error-message">
+					{{ getErrorMessage("versionName") }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Submit Button -->
+	<div class="flex justify-content-end gap-2 mt-2">
+		<p-button
+			class="btn btn__primary"
+			[label]="isEditMode ? ('ontologies.ontology.edit' | translate) : ('ontologies.ontology.add' | translate)"
+			type="button"
+			(click)="onSubmit()"
+			(keydown.enter)="onSubmit()"
+		/>
+	</div>
+</form>

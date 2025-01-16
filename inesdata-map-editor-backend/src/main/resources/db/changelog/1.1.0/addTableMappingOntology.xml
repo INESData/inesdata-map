@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+	<changeSet author="gmv" id="1.1.0-create-mapping-ontology-table">
+		<createTable tableName="mapping_ontology">
+			<column name="mapping_id" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+			<column name="ontology_id" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+
+		<addForeignKeyConstraint baseTableName="MAPPING_ONTOLOGY"
+								 baseColumnNames="mapping_id"
+        						 constraintName="FK_mapping_ontology_mapping"
+        						 referencedTableName="MAPPING"
+        						 referencedColumnNames="id"/>
+
+		<addForeignKeyConstraint
+								 baseTableName="MAPPING_ONTOLOGY"
+								 baseColumnNames="ontology_id"
+        						 constraintName="FK_mapping_ontology_ontology"
+        						 referencedTableName="ONTOLOGY"
+        						 referencedColumnNames="id"/>
+
+		<addPrimaryKey
+								columnNames="mapping_id, ontology_id"
+								tableName="MAPPING_ONTOLOGY"
+								constraintName="PK_mapping_ontology"/>
+	</changeSet>
+
+</databaseChangeLog>
+

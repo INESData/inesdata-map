@@ -1,0 +1,29 @@
+@import "../../../../styles/styles.scss";
+
+:host ::ng-deep .p-breadcrumb {
+	background: none;
+	.p-breadcrumb-list {
+		.p-breadcrumb-home {
+			.p-icon-wrapper {
+				display: none;
+			}
+		}
+		.p-menuitem-separator {
+			font-size: 18px;
+			color: $white;
+		}
+		.p-element {
+			.p-menuitem-link {
+				.p-menuitem-text {
+					font-size: 18px;
+					color: $white;
+				}
+				&.p-menuitem-link-active {
+					.p-menuitem-text {
+						font-weight: 800;
+					}
+				}
+			}
+		}
+	}
+}

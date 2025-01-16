@@ -1,0 +1,22 @@
+@prefix psr: <http://data.loterre.fr/ark:/67375/PSR> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+psr: a skos:ConceptScheme .
+psr:-L9VHV7HW-7
+  a skos:Concept ;
+  skos:altLabel "géométrie neutre"@fr, "neutral geometry"@en ;
+  skos:broader psr:-TJ9ZMMDF-W ;
+  skos:definition """La géométrie absolue (parfois appelée géométrie neutre) est une géométrie basée sur le système d'axiomes de la géométrie euclidienne, privé de l'axiome des parallèles ou de sa négation. Elle est formée des résultats qui sont vrais à la fois en géométrie euclidienne et en géométrie hyperbolique, parfois énoncés sous une forme affaiblie par rapport à l'énoncé euclidien traditionnel.
+<br/>(Wikipedia, L'Encylopédie Libre, <a href="https://fr.wikipedia.org/wiki/G%C3%A9om%C3%A9trie_absolue">https://fr.wikipedia.org/wiki/G%C3%A9om%C3%A9trie_absolue</a>)"""@fr, """Absolute geometry is a geometry based on an axiom system for Euclidean geometry without the parallel postulate or any of its alternatives. Traditionally, this has meant using only the first four of Euclid's postulates. The term was introduced by János Bolyai in 1832. It is sometimes referred to as neutral geometry, as it is neutral with respect to the parallel postulate. The first four of Euclid's postulates are now considered insufficient as a basis of Euclidean geometry, so other systems (such as Hilbert's axioms without the parallel axiom) are used instead.
+<br/>(Wikipedia, The Free Encyclopedia, <a href="https://en.wikipedia.org/wiki/Absolute_geometry">https://en.wikipedia.org/wiki/Absolute_geometry</a>)"""@en ;
+  dc:modified "2023-09-26"^^xsd:date ;
+  skos:prefLabel "géométrie absolue"@fr, "absolute geometry"@en ;
+  skos:inScheme psr: ;
+  skos:exactMatch <https://fr.wikipedia.org/wiki/G%C3%A9om%C3%A9trie_absolue>, <https://en.wikipedia.org/wiki/Absolute_geometry> .
+
+psr:-TJ9ZMMDF-W
+  skos:prefLabel "géométrie"@fr, "geometry"@en ;
+  a skos:Concept ;
+  skos:narrower psr:-L9VHV7HW-7 .

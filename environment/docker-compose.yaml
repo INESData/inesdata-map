@@ -1,0 +1,64 @@
+services:
+  # Frontend
+  map-editor-frontend:
+    image: inesdata-map/map-editor-frontend
+    build:
+      context: ../inesdata-map-editor-frontend
+      dockerfile: docker/Dockerfile
+    ports:
+      - 80:80
+    environment:
+      API_BASE_URL: 'http://localhost:8080'
+    networks:
+      - inesdata-map
+    restart: on-failure
+
+  # Backend
+  map-editor-backend:
+    image: inesdata-map/map-editor-backend
+    build:
+      context: ../inesdata-map-editor-backend
+      dockerfile: docker/Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_URL: 'jdbc:postgresql://inesdata-map-db-postgres-1:5432/inesdata_map_db'
+      SPRING_DATASOURCE_USERNAME: 'inesdata_map'
+      SPRING_DATASOURCE_PASSWORD: 'inesdata_map'
+      SPRING_LIQUIBASE_ENABLED: 'true'
+      APP_DATAPROCESSINGPATH: '/home/mapper/data'
+    depends_on:
+      - db-postgres
+    links:
+      - db-postgres
+    volumes:
+      - ../data:/home/mapper/data
+    networks:
+      - inesdata-map
+    restart: on-failure
+
+  # Base de datos
+  db-postgres:
+    image: postgres:16.4
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./db_setup:/docker-entrypoint-initdb.d/
+      - db-postgres-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-q', '-d', 'postgres', '-U', 'postgres']
+      timeout: 45s
+      interval: 10s
+      retries: 10
+    ports:
+      - 5432:5432
+    networks:
+      - inesdata-map
+    restart: on-failure
+
+volumes:
+  db-postgres-pgdata:
+
+networks:
+  inesdata-map:

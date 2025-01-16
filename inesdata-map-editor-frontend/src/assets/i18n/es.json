@@ -1,0 +1,159 @@
+{
+  "data-sources": {
+    "data-source": {
+      "add": "Añadir fuente de datos",
+      "confirmation": "¿Seguro que quieres eliminar esta fuente de datos?",
+      "data": "Datos",
+      "edit": "Editar fuente de datos",
+      "format": "Seleccione el formato",
+      "list": "Lista de Fuentes de datos",
+      "sources": "Fuentes de datos"
+    }
+  },
+  "labels": {
+    "add-element": "Añadir elemento",
+    "add-query": "Añadir query",
+    "add-rule": "Añadir regla",
+    "cancel": "Cancelar",
+    "connection-url": "URL de conexión",
+    "data-source": "Tipo de fuente de datos",
+    "data-source-file": "Seleccione el fichero de fuente de datos",
+    "data-source-format": "Seleccione el tipo de fuente de datos",
+    "date": "Fecha",
+    "delete": "Eliminar",
+    "file-name": "Ningún archivo seleccionado",
+    "home": "Inicio",
+    "import": "Importar de local",
+    "import_mapping": "Importar mapeo",
+    "importRML": "Seleccionar archivo RML",
+    "name": "Nombre",
+    "new-triplesmap": "Nueva tripleta",
+    "no": "No",
+    "ontology": "Ontología",
+    "ontology-file": "Seleccione el archivo de ontología",
+    "password": "Contraseña",
+    "query": "Query",
+    "title": "Título",
+    "type": "Tipo",
+    "url": "URL",
+    "user": "Usuario",
+    "version_name": "Versión",
+    "yes": "Sí"
+  },
+  "mappings": {
+    "mapping": {
+      "automatic": "Generar mapeo automático",
+      "automatic_selection": "Seleccione las <strong>ontologías</strong> y las <strong>fuentes de datos</strong> necesarias para generar un mapeo automático: ",
+      "build": "Generar mapeo",
+      "confirmation": "¿Seguro que quieres eliminar este mapeo?",
+      "edit": "Editar mapeo",
+      "import": "Importar mapeo",
+      "import_mapping": "Importación de mapeo",
+      "iterator": "Iterador",
+      "list": "Lista de Mapeos",
+      "manual": "Generar mapeo manual",
+      "map": "Mapeo",
+      "map-base-url": "URL base del mapeo",
+      "map-name": "Nombre del mapeo",
+      "mappings-list": "Volver a la lista de mapeos",
+      "new-materialisation": "Nueva materialización",
+      "object": "Objeto",
+      "predicate": "Predicado",
+      "select": "Seleccione el <strong>archivo RML</strong>, las <strong>ontologías</strong> y las <strong>fuentes de datos</strong> necesarias para importar un mapeo: ",
+      "subject": "Sujeto",
+      "templateUrl": "URL del template"
+    }
+  },
+  "materialisations": {
+    "empty": "No hay materializaciones para este mapeo",
+    "executionDate": "Materialización ejecutada el",
+    "historic": "Histórico de materializaciones de "
+  },
+  "messages": {
+    "data-sources": {
+      "errors": {
+        "no-file": "No se ha seleccionado un fichero de fuente de datos"
+      },
+      "success": {
+        "created": "Fuente de datos creada correctamente",
+        "deleted": "Fuente de datos eliminada correctamente",
+        "updated": "Fuente de datos actualizada correctamente"
+      }
+    },
+    "errors": {
+      "generic": "Ha ocurrido un error procesando la operación",
+      "internet": {
+        "connection": "No hay conexión a internet"
+      },
+      "login": "Error al acceder",
+      "required": "El campo es requerido",
+      "title": "Error"
+    },
+    "mappings": {
+      "errors": {
+        "no-data-type": "El tipo de dato es necesario para el tipo de término literal",
+        "no-iterator": "El iterador es necesario para las fuentes de datos de tipo XML o JSON",
+        "no-name-url": "El mapeo debe tener un nombre y una URL base"
+      },
+      "predicate": {
+        "incomplete": "La propiedad seleccionada no tiene un prefijo definido"
+      },
+      "rule": {
+        "incomplete": "Regla incompleta. Por favor, revisa los campos."
+      },
+      "success": {
+        "created": "Mapeo creado correctamente",
+        "deleted": "Mapeo eliminado correctamente",
+        "updated": "Mapeo editado correctamente"
+      }
+    },
+    "materialisations": {
+      "errors": {
+        "not-found": "El archivo no se ha generado correctamente y no se puede recuperar"
+      },
+      "success": {
+        "executed": "Materialización ejecutada correctamente"
+      }
+    },
+    "no_data": "No existen registros disponibles",
+    "ontologies": {
+      "success": {
+        "created": "Ontología creada correctamente",
+        "deleted": "Ontología eliminada correctamente",
+        "updated": "Ontología actualizada correctamente"
+      }
+    },
+    "success": "Éxito"
+  },
+  "ontologies": {
+    "ontologies": "Ontologías",
+    "ontology": {
+      "add": "Añadir ontología",
+      "classes": "Clases",
+      "confirmation": "¿Seguro que quieres eliminar esta ontología?",
+      "edit": "Editar ontología",
+      "list": "Lista de Ontologías",
+      "properties": "Propiedades"
+    }
+  },
+  "placeholders": {
+    "dataType": "Selecciona el tipo de dato",
+    "fields": "Buscar campos...",
+    "search": "Buscar por..."
+  },
+  "properties": {
+    "annotation": "Propiedad de Anotación",
+    "associated": "Asociada a la clase",
+    "data": "Propiedad de Datos",
+    "object": "Propiedad de Objeto"
+  },
+  "sidebar": {
+    "labels": {
+      "builder": "Generador de mapeo manual",
+      "data-sources": "Fuentes de datos",
+      "edit": "Editar mapeo",
+      "mappings": "Mapeos",
+      "ontologies": "Ontologías"
+    }
+  }
+}

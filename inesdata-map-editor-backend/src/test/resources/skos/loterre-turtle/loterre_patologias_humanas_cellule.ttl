@@ -1,0 +1,23 @@
+@prefix vh8: <http://data.loterre.fr/ark:/67375/VH8> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+vh8:-VP4WNDCR-P
+  skos:exactMatch <https://en.wikipedia.org/wiki/Cell_(biology)>, <https://fr.wikipedia.org/wiki/Cellule> ;
+  skos:definition "Cellule vient du latin cellula (« petite chambre »), dérivé de cella (« local fermé »), terme lui-même issu de celare (« cacher »). (Wikipédia)"@fr, "The cell (from Latin cella, meaning \"small room\"[1]) is the basic structural, functional, and biological unit of all known organisms. A cell is the smallest unit of life. Cells are often called the \"building blocks of life\". The study of cells is called cell biology, cellular biology, or cytology. (Wikipedia)"@en ;
+  skos:prefLabel "cellule"@fr, "cell"@en ;
+  a skos:Concept ;
+  skos:narrower vh8:-V10HRD6X-1 ;
+  skos:inScheme vh8: ;
+  skos:broader vh8:-W1PLQJLQ-D .
+
+vh8: a skos:ConceptScheme .
+vh8:-W1PLQJLQ-D
+  skos:prefLabel "anatomie"@fr, "anatomy"@en ;
+  a skos:Concept ;
+  skos:narrower vh8:-VP4WNDCR-P .
+
+vh8:-V10HRD6X-1
+  skos:prefLabel "blood cell"@en, "cellule sanguine"@fr ;
+  a skos:Concept ;
+  skos:broader vh8:-VP4WNDCR-P .
+

@@ -1,0 +1,159 @@
+{
+  "data-sources": {
+    "data-source": {
+      "add": "Add data source",
+      "confirmation": "Are you sure you want to delete this data source?",
+      "data": "Data",
+      "edit": "Edit data source",
+      "format": "Select the data source format",
+      "list": "Data Sources list",
+      "sources": "Data sources"
+    }
+  },
+  "labels": {
+    "add-element": "Add element",
+    "add-query": "Add query",
+    "add-rule": "Add rule",
+    "cancel": "Cancel",
+    "connection-url": "Connection URL",
+    "data-source": "Data Source Type",
+    "data-source-file": "Select the data source file",
+    "data-source-format": "Select the data source type",
+    "date": "Date",
+    "delete": "Delete",
+    "file-name": "No file selected",
+    "home": "Home",
+    "import": "Import from local",
+    "import_mapping": "Import mapping",
+    "importRML": "Select RML file",
+    "name": "Name",
+    "new-triplesmap": "New triples map",
+    "no": "No",
+    "ontology": "Ontology",
+    "ontology-file": "Select ontology file",
+    "password": "Password",
+    "query": "Query",
+    "title": "Title",
+    "type": "Type",
+    "url": "URL",
+    "user": "User",
+    "version_name": "Version",
+    "yes": "Yes"
+  },
+  "mappings": {
+    "mapping": {
+      "automatic": "Generate automatic mapping",
+      "automatic_selection": "Select the <strong>ontologies</strong> and <strong>data sources</strong> needed to generate an automatic mapping: ",
+      "build": "Build mapping",
+      "confirmation": "Are you sure you want to delete this mapping?",
+      "edit": "Edit mapping",
+      "import": "Import mapping",
+      "import_mapping": "Import mapping",
+      "iterator": "Iterator",
+      "list": "Mappings List",
+      "manual": "Generate manual mapping",
+      "map": "Mapping",
+      "map-base-url": "Mapping base URL",
+      "map-name": "Mapping name",
+      "mappings-list": "Back to mapping list",
+      "new-materialisation": "New materialisation",
+      "object": "Object",
+      "predicate": "Predicate",
+      "select": "Select the <strong>RML file</strong>, the <strong>ontologies</strong> and <strong>data sources</strong> needed to import a mapping: ",
+      "subject": "Subject",
+      "templateUrl": "Template URL"
+    }
+  },
+  "materialisations": {
+    "empty": "There are no materialisations for this mapping",
+    "executionDate": "Materialisation executed on",
+    "historic": "Materialisation history of "
+  },
+  "messages": {
+    "data-sources": {
+      "errors": {
+        "no-file": "No data source file selected"
+      },
+      "success": {
+        "created": "Data source successfully created",
+        "deleted": "Data source successfully deleted",
+        "updated": "Data source successfully updated"
+      }
+    },
+    "errors": {
+      "generic": "An error occurred while processing your operation",
+      "internet": {
+        "connection": "No internet connection"
+      },
+      "login": "Login error",
+      "required": "The value field is required",
+      "title": "Error"
+    },
+    "mappings": {
+      "errors": {
+        "no-data-type": "Data type is required for literal term type",
+        "no-iterator": "Iterator is required for XML or JSON data source type",
+        "no-name-url": "Mapping must have a name and a base URL"
+      },
+      "predicate": {
+        "incomplete": "The selected property does not have a defined prefix"
+      },
+      "rule": {
+        "incomplete": "Incomplete rule. Please check the fields."
+      },
+      "success": {
+        "created": "Mapping successfully created",
+        "deleted": "Mapping successfully deleted",
+        "updated": "Mapping successfully updated"
+      }
+    },
+    "materialisations": {
+      "errors": {
+        "not-found": "The file has not been generated correctly and cannot be retrieved"
+      },
+      "success": {
+        "executed": "Materialisation successfully executed"
+      }
+    },
+    "no_data": "No records are available",
+    "ontologies": {
+      "success": {
+        "created": "Ontology successfully created",
+        "deleted": "Ontology successfully deleted",
+        "updated": "Ontology successfully updated"
+      }
+    },
+    "success": "Success"
+  },
+  "ontologies": {
+    "ontologies": "Ontologies",
+    "ontology": {
+      "add": "Add ontology",
+      "classes": "Classes",
+      "confirmation": "Are you sure you want to delete this ontology?",
+      "edit": "Edit ontology",
+      "list": "Ontologies list",
+      "properties": "Properties"
+    }
+  },
+  "placeholders": {
+    "dataType": "Select the data type",
+    "fields": "Search fields...",
+    "search": "Search by..."
+  },
+  "properties": {
+    "annotation": "Annotation Property",
+    "associated": "Associated to class",
+    "data": "Data property",
+    "object": "Object Property"
+  },
+  "sidebar": {
+    "labels": {
+      "builder": "Manual mapping builder",
+      "data-sources": "Data sources",
+      "edit": "Edit mapping",
+      "mappings": "Mappings",
+      "ontologies": "Ontologies"
+    }
+  }
+}

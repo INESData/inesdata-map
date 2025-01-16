@@ -1,0 +1,16 @@
+/* Custom FOOTER component styles */
+
+.footer {
+	background-color: #df0024;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+}
+
+.footer__company {
+	color: white;
+	font-weight: bold;
+	margin: 30px auto;
+	text-align: center;
+}

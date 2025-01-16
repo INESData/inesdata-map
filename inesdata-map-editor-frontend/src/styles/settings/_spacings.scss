@@ -1,0 +1,28 @@
+$base: 8px;
+$qtyclass: 5;
+$utilities: (
+	"m": margin,
+	"p": padding
+);
+$sides: (
+	"t": top,
+	"r": right,
+	"b": bottom,
+	"l": left
+);
+
+@each $uKey, $uValue in $utilities {
+	@for $i from 0 through $qtyclass {
+		.#{$uKey}-#{$i} {
+			#{$uValue}: #{$i * $base} !important;
+		}
+
+		@each $sKey, $sValue in $sides {
+			.#{$uKey + $sKey }-#{$i} {
+				#{$uValue}-#{$sValue}: #{$i * $base} !important;
+			}
+		}
+	}
+}
+
+// sample class --> mt-1 = margin-top: 8px;

@@ -1,0 +1,76 @@
+@import "../../../../styles/styles.scss";
+
+/* Custom HEADER component styles */
+
+.header {
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 2rem;
+	height: 100px;
+	width: 100%;
+	background-color: $primary;
+	a {
+		display: block;
+		width: 400px;
+		margin-right: 1rem;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.left-section {
+	display: flex;
+	align-items: center;
+}
+
+.right-section {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	margin: 0;
+	padding: 0;
+}
+
+.header__logo__image {
+	height: 2em;
+	vertical-align: middle;
+}
+
+.main-menu__header {
+	display: none;
+}
+
+.main-menu__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu__list__item {
+	display: inline-block;
+	padding: 0 1.4em 0 0;
+}
+
+.header__brand {
+	display: flex;
+	flex-direction: row;
+}
+
+.header__menu {
+	display: flex;
+	flex-direction: row;
+}
+
+.header__user {
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+}

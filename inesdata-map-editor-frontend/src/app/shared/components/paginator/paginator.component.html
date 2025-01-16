@@ -1,0 +1,13 @@
+<div *ngIf="paginationInfo?.totalElements > 0">
+	<p-paginator
+		[rows]="paginationInfo.size"
+		[totalRecords]="paginationInfo.totalElements"
+		[first]="paginationInfo.number * paginationInfo.size"
+		(onPageChange)="onPageChange($event)"
+	/>
+</div>
+
+<div *ngIf="paginationInfo?.totalElements === 0">
+	<!-- No data available -->
+	<p>{{ "messages.no_data" | translate }}</p>
+</div>

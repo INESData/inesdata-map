@@ -1,0 +1,38 @@
+<p-button
+	class="btn btn__primary mb-2"
+	[label]="'mappings.mapping.new-materialisation' | translate"
+	(onClick)="newMaterialisation(mappingId)"
+/>
+
+<div class="recordContainer" *ngIf="executionHistory && executionHistory.length > 0">
+	<div class="recordContainer__item" *ngFor="let execution of executionHistory">
+		<p class="recordTitle">
+			{{ "materialisations.executionDate" | translate }}
+			<strong>{{ execution.executionDate | date: "dd-MM-yyyy HH:mm" }}</strong>
+		</p>
+		<div class="recordFiles">
+			<p-button
+				label="{{ execution.mappingFileName }}"
+				class="recordFile recordFile__RML"
+				[link]="true"
+				(onClick)="downloadFile(execution.id, execution.mappingFileName)"
+			/>
+			<p-button
+				label="{{ execution.knowledgeGraphFileName }}"
+				class="recordFile recordFile__RDF"
+				[link]="true"
+				(onClick)="downloadFile(execution.id, execution.knowledgeGraphFileName)"
+			/>
+			<p-button
+				label="{{ execution.logFileName }}"
+				class="recordFile recordFile__LOG"
+				[link]="true"
+				(onClick)="downloadFile(execution.id, execution.logFileName)"
+			/>
+		</div>
+	</div>
+</div>
+
+<div *ngIf="!executionHistory || executionHistory.length === 0">
+	<p>{{ "materialisations.empty" | translate }}</p>
+</div>
