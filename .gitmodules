@@ -1,0 +1,8 @@
+[submodule "inesdata-map-editor-backend"]
+	path = inesdata-map-editor-backend
+	url = https://github.com/INESData/inesdata-map-editor-backend
+	branch = master
+[submodule "inesdata-map-editor-frontend"]
+	path = inesdata-map-editor-frontend
+	url = https://github.com/INESData/inesdata-map-editor-frontend
+	branch = master

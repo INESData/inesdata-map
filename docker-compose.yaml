@@ -3,7 +3,7 @@ services:
   map-editor-frontend:
     image: inesdata-map/map-editor-frontend
     build:
-      context: ../inesdata-map-editor-frontend
+      context: inesdata-map-editor-frontend
       dockerfile: docker/Dockerfile
     ports:
       - 80:80
@@ -17,7 +17,7 @@ services:
   map-editor-backend:
     image: inesdata-map/map-editor-backend
     build:
-      context: ../inesdata-map-editor-backend
+      context: inesdata-map-editor-backend
       dockerfile: docker/Dockerfile
     ports:
       - 8080:8080
@@ -32,7 +32,7 @@ services:
     links:
       - db-postgres
     volumes:
-      - ../data:/home/mapper/data
+      - ./data:/home/mapper/data
     networks:
       - inesdata-map
     restart: on-failure

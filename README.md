@@ -2,24 +2,30 @@
 
 This is a guide for launching the INESData Map application using Docker in a local environment.
 
+This project contains git submodules for the [Map editor backend](https://github.com/INESData/inesdata-map-editor-backend) and the [Map editor frontend](https://github.com/INESData/inesdata-map-editor-frontend) repositories.
+
+To clone this repository and initialize and update each submodule, use the following command:
+
+```bash
+$ git clone --recurse-submodules https://github.com/INESData/inesdata-map-getstarted
+```
+
+If you already cloned the project and forgot `--recurse-submodules`, you can by running the following command:
+
+```bash
+$ git submodule update --init
+```
+
+To update the submodules to the latest commit, run the following command:
+
+```bash
+$ git submodule update --remote
+```
+
 ## Prerequisites
 
 - Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
-- Clone the [Map editor backend](https://github.com/INESData/inesdata-map-editor-backend) and the [Map editor frontend](https://github.com/INESData/inesdata-map-editor-frontend) repositories
 - The following ports must not be occupied: 80, 8080, 5432
-
-Clone this repository in a directory called `environment` in the same directory as the backend and frontend repositories. The directory structure should look like this:
-
-```
-inesdata-map/
-├── inesdata-map-editor-frontend/
-├── inesdata-map-editor-backend/
-└── environment/
-    ├── db_setup/
-    │   └── 00_init_inesdata-map_db.sh
-    └── docker-compose.yaml
-```
-
 ## Services
 
 This application consists of the following services:
