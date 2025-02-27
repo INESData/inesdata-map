@@ -7,19 +7,19 @@ This project contains git submodules for the [Map editor backend](https://github
 To clone this repository and initialize and update each submodule, use the following command:
 
 ```bash
-$ git clone --recurse-submodules https://github.com/INESData/inesdata-map-getstarted
+git clone --recurse-submodules https://github.com/INESData/inesdata-map-getstarted
 ```
 
 If you already cloned the project and forgot `--recurse-submodules`, you can by running the following command:
 
 ```bash
-$ git submodule update --init
+git submodule update --init
 ```
 
 To update the submodules to the latest commit, run the following command:
 
 ```bash
-$ git submodule update --remote
+git submodule update --remote
 ```
 
 ## Prerequisites
@@ -43,13 +43,7 @@ The configuration of the application is done through different environment varia
 To start the services, the following command must be executed from a command line window:
 
 ```bash
-$ docker compose -p inesdata-map up --build -d
-# …
-# The process of building the images will begin.
-# …
-✔ Container inesdata-map-editor-frontend-1 Started
-✔ Container inesdata-db-postgres-1 Started
-✔ Container inesdata-map-editor-backend-1 Started
+docker compose -p inesdata-map up --build -d
 ```
 
 ## Verifying the installation
@@ -57,7 +51,7 @@ $ docker compose -p inesdata-map up --build -d
 To check the status of the containers, the following command must be executed from a command line window:
 
 ```bash
-$ docker ps
+docker ps
 
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 d8b44bac3798 inesdata-map/mapper-backend "./docker-entrypoint…" 25 minutes ago Up About a minute 0.0.0.0:8080->8080/tcp, :::8080->8080/tcp inesdata-map-map-editor-backend-1
