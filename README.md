@@ -66,5 +66,5 @@ This will indicate that the three containers have started successfully. To acces
 To stop the services, the following command must be executed from a command line window:
 
 ```bash
-$ docker compose -p inesdata-map stop
+docker compose -p inesdata-map stop
 ```
