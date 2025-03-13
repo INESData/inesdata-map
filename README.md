@@ -26,6 +26,7 @@ git submodule update --remote
 
 - Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
 - The following ports must not be occupied: 80, 8080, 5432
+
 ## Services
 
 This application consists of the following services:
@@ -36,7 +37,16 @@ This application consists of the following services:
 
 ## Configuration
 
-The configuration of the application is done through different environment variables. The environment variables are defined in the `docker-compose.yaml` file.
+The configuration of the application is done through different environment variables. The environment variables are defined in the `docker-compose.yaml` file, under the `map-editor-backend` service.
+
+**Every user who wants to use an AI model must be registered in the INESdata platform and added as a collaborator in the Kubeflow namespace where that model is deployed. Please, contact your system administrator for more information.**
+
+The following environment variables must be configured before starting the application in order to use the generative AI module:
+
+- `KUBEFLOW_LLM_ENDPOINT`: The LLM endpoint (e.g., `https://kubeflow.ai.inesdata-project.eu/openai/v1/completions`)
+- `KUBEFLOW_LLM_HOST`: The KServe host (e.g., `mixtral87b.XXX.kserve.ai.inesdata-project.eu`)
+- `KUBEFLOW_USERNAME`: Your Kubeflow username
+- `KUBEFLOW_PASSWORD`: Your Kubeflow password
 
 ## Starting the application
 
