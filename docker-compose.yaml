@@ -27,6 +27,7 @@ services:
       SPRING_DATASOURCE_PASSWORD: 'inesdata_map'
       SPRING_LIQUIBASE_ENABLED: 'true'
       APP_DATAPROCESSINGPATH: '/home/mapper/data'
+      APP_CIPHERKEY: '68FF6359A0F04F375BE978FF215C400F'
       KUBEFLOW_LLM_ENDPOINT: 'https://kubeflow.ai.inesdata-project.eu/openai/v1/completions'
       KUBEFLOW_LLM_HOST: '<LLM HOST>'
       KUBEFLOW_USERNAME: '<Your username>'
@@ -36,7 +37,7 @@ services:
     links:
       - db-postgres
     volumes:
-      - ./data:/home/mapper/data
+      - data:/home/mapper/data
     networks:
       - inesdata-map
     restart: on-failure
@@ -63,6 +64,7 @@ services:
 
 volumes:
   db-postgres-pgdata:
+  data:
 
 networks:
   inesdata-map:

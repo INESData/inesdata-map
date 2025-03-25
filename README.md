@@ -27,6 +27,14 @@ git submodule update --remote
 - Install [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
 - The following ports must not be occupied: 80, 8080, 5432
 
+## Previous steps
+
+Generate a secret key to encrypt and decrypt the passwords of the data sources using the following command:
+
+```
+openssl enc -aes-128-cbc -k secret -P -md sha1
+```
+
 ## Services
 
 This application consists of the following services:
@@ -38,6 +46,10 @@ This application consists of the following services:
 ## Configuration
 
 The configuration of the application is done through different environment variables. The environment variables are defined in the `docker-compose.yaml` file, under the `map-editor-backend` service.
+
+Configure the following environment variables before starting the application:
+
+- `APP_CIPHERKEY`: Secret key used to encrypt and decrypt the passwords of the data sources.
 
 **Every user who wants to use an AI model must be registered in the INESdata platform and added as a collaborator in the Kubeflow namespace where that model is deployed. Please, contact your system administrator for more information.**
 
