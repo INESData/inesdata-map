@@ -29,7 +29,33 @@ git submodule update --remote
 
 ## Previous steps
 
-Generate a secret key to encrypt and decrypt the passwords of the data sources using the following command:
+Check that openssl is installed:
+
+```
+openssl version
+```
+
+If not, install it:
+
+- Linux
+
+  ```
+  sudo apt install openssl
+  ```
+
+- macOS
+
+  ```
+  brew install openssl
+  ```
+
+- Windows
+
+  - Download and install the .exe file Win32/Win64 OpenSSL Light version from https://slproweb.com/products/Win32OpenSSL.html
+
+  - Add the path to the OpenSSL installation, for instance C:\Program Files\OpenSSL-Win64\bin, to the PATH environment variable.
+
+Verify that the installation was successful by running the command `openssl version` and generate a secret key to encrypt and decrypt the passwords of the data sources:
 
 ```
 openssl enc -aes-128-cbc -k secret -P -md sha1
@@ -49,7 +75,7 @@ The configuration of the application is done through different environment varia
 
 Configure the following environment variables before starting the application:
 
-- `APP_CIPHERKEY`: Secret key used to encrypt and decrypt the passwords of the data sources.
+- `APP_CIPHERKEY`: Previously generated secret key used to encrypt and decrypt the passwords of the data sources.
 
 **Every user who wants to use an AI model must be registered in the INESdata platform and added as a collaborator in the Kubeflow namespace where that model is deployed. Please, contact your system administrator for more information.**
 
