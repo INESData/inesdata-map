@@ -7,7 +7,7 @@ This project contains git submodules for the [Map editor backend](https://github
 To clone this repository and initialize and update each submodule, use the following command:
 
 ```bash
-git clone --recurse-submodules https://github.com/INESData/inesdata-map-getstarted
+git clone --recurse-submodules https://github.com/INESData/inesdata-map
 ```
 
 If you already cloned the project and forgot `--recurse-submodules`, you can by running the following command:
