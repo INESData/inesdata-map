@@ -1,6 +1,6 @@
 # Introduction
 
-INESData Map is an intuitive web application that enables users to define relationships between data, manage and store mapping rules, and streamline the process of building knowledge graphs. It includes an efficient engine based on the [*Morph*](https://github.com/morph-kgc/morph-kgc) tool, capable of interpreting declarative mapping rules and generating the corresponding knowledge graphs.
+INESData Map is an intuitive web application that enables users to define relationships between data, manage and store mapping rules, and streamline the process of building knowledge graphs. It includes an efficient engine based on the [Morph](https://github.com/morph-kgc/morph-kgc) tool, capable of interpreting declarative mapping rules and generating the corresponding knowledge graphs.
 
 To ensure the integrity and availability of resources used in graph construction, the application also includes features for managing their lifecycle, such as a history of materializations.
 
