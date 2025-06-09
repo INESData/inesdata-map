@@ -1,3 +1,12 @@
+# Introduction
+
+INESData Map is an intuitive web application that enables users to define relationships between data, manage and store mapping rules, and streamline the process of building knowledge graphs. It includes an efficient engine based on the [Morph](https://github.com/morph-kgc/morph-kgc) tool, capable of interpreting declarative mapping rules and generating the corresponding knowledge graphs.
+
+To ensure the integrity and availability of resources used in graph construction, the application also includes features for managing their lifecycle, such as a history of materializations.
+
+Finally, generative AI techniques are integrated to allow automatic creation of mapping rules. This is achieved through the development of language models capable of understanding and generating mapping rules tailored to the user’s inputs.
+
+
 # Get started with INESData Map
 
 This is a guide for launching the INESData Map application using Docker in a local environment.
