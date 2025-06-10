@@ -6,6 +6,7 @@ To ensure the integrity and availability of resources used in graph construction
 
 Finally, generative AI techniques are integrated to allow automatic creation of mapping rules. This is achieved through the development of language models capable of understanding and generating mapping rules tailored to the user’s inputs.
 
+For further information, please check the [User Guide](docs/GMV-INESDATA-MAP-GU-001_v3.0.pdf).
 
 # Get started with INESData Map
 
