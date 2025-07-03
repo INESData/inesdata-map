@@ -95,6 +95,12 @@ The following environment variables must be configured before starting the appli
 - `KUBEFLOW_LLM_HOST`: The KServe host (e.g., `mixtral87b.XXX.kserve.ai.inesdata-project.eu`)
 - `KUBEFLOW_USERNAME`: Your Kubeflow username
 - `KUBEFLOW_PASSWORD`: Your Kubeflow password
+- `HF_TOKEN`: Hugging Face user access token for tokenizer model
+
+NOTE: If LLM model is outside Kubeflow's INESDATA platform, there's the possibility of using Azure OpenAI LLM model by following these steps:
+1. Remove environment variable `KUBEFLOW_LLM_ENDPOINT`
+2. Create new environment variable `AZURE_LLM_ENDPOINT` for new Azure LLM endpoint
+3. Create new environment variable `AZURE_API_KEY` for Azure credentials.
 
 ## Starting the application
 
