@@ -32,6 +32,7 @@ services:
       KUBEFLOW_LLM_HOST: '<LLM HOST>'
       KUBEFLOW_USERNAME: '<Your username>'
       KUBEFLOW_PASSWORD: '<Your password>'
+      HF_TOKEN: '<Your Hugging Face token>'
     depends_on:
       - db-postgres
     links:
