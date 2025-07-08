@@ -98,9 +98,10 @@ The following environment variables must be configured before starting the appli
 - `HF_TOKEN`: [Hugging Face user access token](https://huggingface.co/settings/tokens) for tokenizer model (e.g. `hf_XXX`)
 
 NOTE: If LLM model is outside Kubeflow's INESDATA platform, there's the possibility of using Azure OpenAI LLM model by following these steps:
-1. Remove environment variable `KUBEFLOW_LLM_ENDPOINT`
-2. Create new environment variable `AZURE_LLM_ENDPOINT` for new Azure LLM endpoint
-3. Create new environment variable `AZURE_API_KEY` for Azure credentials.
+1. Recommended LLM model (the one that has been used in development tests of [gen-ai package](https://github.com/INESData/inesdata-map-gen-ai)) to deploy in Azure OpenAI is `gpt-40-mini`, which is already specified in LLM parameters `model` and `model-id` from file `gen_ai_mapping/azure_llm_params.json`.
+2. To connect to the Azure model instead of the Kubeflow model (the default model), it's necessary to delete the Kubeflow environment variable `KUBEFLOW_LLM_ENDPOINT`.
+3. Create new environment variable `AZURE_LLM_ENDPOINT` for new Azure LLM endpoint (e.g. `https://<azure-openai-url>.openai.azure.com/openai/deployments/`).
+4. Create new environment variable `AZURE_API_KEY` for Azure credentials.
 
 ## Starting the application
 
