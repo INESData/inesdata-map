@@ -89,13 +89,13 @@ Configure the following environment variables before starting the application:
 
 **Every user who wants to use an AI model must be registered in the INESdata platform and added as a collaborator in the Kubeflow namespace where that model is deployed. Please, contact your system administrator for more information.**
 
-The following environment variables must be configured before starting the application in order to use the generative AI module:
+The following environment variables must be configured before starting the application in order to use the [generative AI module](https://github.com/INESData/inesdata-map-gen-ai):
 
 - `KUBEFLOW_LLM_ENDPOINT`: The LLM endpoint (e.g., `https://kubeflow.ai.inesdata-project.eu/openai/v1/completions`)
 - `KUBEFLOW_LLM_HOST`: The KServe host (e.g., `mixtral87b.XXX.kserve.ai.inesdata-project.eu`)
 - `KUBEFLOW_USERNAME`: Your Kubeflow username
 - `KUBEFLOW_PASSWORD`: Your Kubeflow password
-- `HF_TOKEN`: Hugging Face user access token for tokenizer model
+- `HF_TOKEN`: Hugging Face user access token for tokenizer model (e.g. `hf_XXX`)
 
 NOTE: If LLM model is outside Kubeflow's INESDATA platform, there's the possibility of using Azure OpenAI LLM model by following these steps:
 1. Remove environment variable `KUBEFLOW_LLM_ENDPOINT`
