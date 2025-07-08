@@ -95,7 +95,7 @@ The following environment variables must be configured before starting the appli
 - `KUBEFLOW_LLM_HOST`: The KServe host (e.g., `mixtral87b.XXX.kserve.ai.inesdata-project.eu`)
 - `KUBEFLOW_USERNAME`: Your Kubeflow username
 - `KUBEFLOW_PASSWORD`: Your Kubeflow password
-- `HF_TOKEN`: Hugging Face user access token for tokenizer model (e.g. `hf_XXX`)
+- `HF_TOKEN`: [Hugging Face user access token](https://huggingface.co/settings/tokens) for tokenizer model (e.g. `hf_XXX`)
 
 NOTE: If LLM model is outside Kubeflow's INESDATA platform, there's the possibility of using Azure OpenAI LLM model by following these steps:
 1. Remove environment variable `KUBEFLOW_LLM_ENDPOINT`
